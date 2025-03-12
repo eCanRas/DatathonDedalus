@@ -1,8 +1,18 @@
-import openai
 from langchain_openai import ChatOpenAI
-from langchain_core.messages import HumanMessage
+from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_community.chat_message_histories import ChatMessageHistory
+
+# Funcion para cargar prompt a partir de un fichero
+def cargar_prompt(archivo):
+    with open(archivo, "r", encoding="utf-8") as f:
+        return f.read()
+
+# Archivo que contiene el prompt
+archivo_prompt = "Prompt.txt"
+
+# Cargar el prompt en una variable
+promptAssistant = cargar_prompt(archivo_prompt)
 
 # Configurar el modelo con LiteLLM a través de OpenAI
 llm = ChatOpenAI(
@@ -15,20 +25,20 @@ llm = ChatOpenAI(
 memory = ChatMessageHistory()
 
 # Función para obtener el historial de una sesión (simulada aquí)
-def get_session_history(session_id: str):
-    return memory  # En una implementación real, usarías una DB o Redis
+def get_session_history():
+    return memory
 
 # Definir un Runnable con historial de mensajes
 chat = RunnableWithMessageHistory(llm, get_session_history=get_session_history)
 
-# Interacción con el agente
-session_id = "usuario_123"  # ID de sesión ficticio
 
 # Funcion que llama al asistente
 def Assitant(user_input):
     response = chat.invoke(
-        [HumanMessage(content=user_input)],
-        config={"configurable": {"session_id": session_id}}
+        [
+            SystemMessage(content=promptAssistant),
+            HumanMessage(content=user_input)
+        ],
     )
     return response.content
 
