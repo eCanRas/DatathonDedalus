@@ -1,5 +1,3 @@
-from linecache import cache
-
 import pandas as pd
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage, SystemMessage
@@ -10,73 +8,80 @@ from langchain_experimental.agents.agent_toolkits.csv.base import create_pandas_
 import os
 from dotenv import load_dotenv
 
-"""Lee el prompt para el asistente desde un archivo de texto."""
-def cargar_prompt(archivo):
-    with open(archivo, "r", encoding="utf-8") as f:
-        return f.read()
+class Asistente:
 
-# Ubicacion del prompt
-archivo_prompt = "Prompt.txt"
-#Carga el prompt
-promptAssistant = cargar_prompt(archivo_prompt)
+    """Lee el prompt para el asistente desde un archivo de texto."""
+    def _cargar_prompt(self, archivo):
+        with open(archivo, "r", encoding="utf-8") as f:
+            return f.read()
 
-# Cargar las variables de entorno desde .env
-load_dotenv()
+    """Función para obtener el historial de una sesión"""
+    def _get_session_history(self, memory):
+        return memory
 
-api_key=os.getenv("api_key","")
-base_url=os.getenv("base_url", "")
-model=os.getenv("model", "")
+    """Constructor de la clase
+        """
+    def __init__(self):
+        # Ubicacion del prompt
+        archivo_prompt = "Prompt.txt"
+        #Carga el prompt
+        self.promptAssistant = self._cargar_prompt(archivo_prompt)
 
-# Instancia el modelo
-llm = ChatOpenAI(
-    api_key=api_key,
-    base_url=base_url,
-    model=model
-)
+        # Cargar las variables de entorno desde .env
+        load_dotenv()
+        api_key=os.getenv("api_key","")
+        base_url=os.getenv("base_url", "")
+        model=os.getenv("model", "")
 
-# Memoria de historial de conversación
-memory = ChatMessageHistory()
-
-"""Función para obtener el historial de una sesión"""
-def get_session_history():
-    return memory
-
-agent_executor = create_pandas_dataframe_agent(
-    llm,
-    # Carga los ficheros
-    [pd.read_csv(".\\DATA\\cohorte_alegias.csv"),
-    pd.read_csv(".\\DATA\\cohorte_condiciones.csv"),
-    pd.read_csv(".\\DATA\\cohorte_encuentros.csv"),
-    pd.read_csv(".\\DATA\\cohorte_medicationes.csv"),
-    pd.read_csv(".\\DATA\\cohorte_pacientes.csv"),
-    pd.read_csv(".\\DATA\\cohorte_procedimientos.csv")],
-    verbose=True,
-    allow_dangerous_code=True,
-    # handle_parsing_errors=True
-)
-
-# Definir un Runnable con historial de mensajes
-chat = RunnableWithMessageHistory(
-    agent_executor,
-    get_session_history=get_session_history,
-    # handle_parsing_errors=True
-)
-
-# Función que llama al asistente e inyecta los datos del CSV
-def Assitant(user_input):
-    try:
-        response = chat.invoke(
-            [
-                # Prompt del sistema
-                SystemMessage(content=f"{promptAssistant}"), # \n\n{contexto_csv}
-                # Prompt del usuario
-                HumanMessage(content=user_input)
-            ],
+        # Instancia el modelo
+        llm = ChatOpenAI(
+            api_key=api_key,
+            base_url=base_url,
+            model=model
         )
-        return response["output"]
-    except Exception as e:
-        print(e)
-        return "ERROR"
+
+        # Memoria de historial de conversación
+        memory = ChatMessageHistory()
+
+        # Crea el agente para cargar el csv
+        agent_executor = create_pandas_dataframe_agent(
+            llm,
+            # Carga los ficheros
+            [pd.read_csv(".\\DATA\\cohorte_alegias.csv"),
+            pd.read_csv(".\\DATA\\cohorte_condiciones.csv"),
+            pd.read_csv(".\\DATA\\cohorte_encuentros.csv"),
+            pd.read_csv(".\\DATA\\cohorte_medicationes.csv"),
+            pd.read_csv(".\\DATA\\cohorte_pacientes.csv"),
+            pd.read_csv(".\\DATA\\cohorte_procedimientos.csv")],
+            verbose=True,
+            allow_dangerous_code=True,
+            # handle_parsing_errors=True
+        )
+
+        # Definir un Runnable con historial de mensajes
+        self.chat = RunnableWithMessageHistory(
+            agent_executor,
+            get_session_history=self._get_session_history(memory),
+            # handle_parsing_errors=True
+        )
+
+        # Función que llama al asistente e inyecta los datos del CSV
+    def assitant(self, user_input):
+        try:
+            response = self.chat.invoke(
+                [
+                    # Prompt del sistema
+                    SystemMessage(content=f"{self.promptAssistant}"), # \n\n{contexto_csv}
+                    # Prompt del usuario
+                    HumanMessage(content=user_input)
+                ],
+            )
+            return response["output"]
+        except Exception as e:
+            print(e)
+            return "ERROR"
+
+Asistente = Asistente()
 
 # Bucle para conversación
 while True:
@@ -87,6 +92,6 @@ while True:
         print("Asistente: ¡Hasta luego!")
         break
     # Obtener respuesta del asistente
-    bot_response = Assitant(user_input)
+    bot_response = Asistente.assitant(user_input)
     # Imprimir respuesta del asistente
     print("Asistente:", bot_response)
