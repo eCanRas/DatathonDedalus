@@ -10,6 +10,9 @@ async def main(message: cl.Message):
     if asistente is None:  # Solo se instancia cuando se recibe el primer mensaje
         asistente = Asistente()
     
+    if message.content in ['salir', 'exit', 'quitar', 'adiós']:
+        await cl.Message(content="Si necesitas más infomación, aquí estará Castor para ayudarle en investigación").send()
+        exit()
     bot_response = asistente.assitant(message.content)
     await cl.Message(content=bot_response, author="Asistente").send()
 
