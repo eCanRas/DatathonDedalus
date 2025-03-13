@@ -23,14 +23,9 @@ promptAssistant = cargar_prompt(archivo_prompt)
 # Cargar las variables de entorno desde .env
 load_dotenv()
 
-'''api_key=os.getenv("api_key",),
-print(api_key)
-base_url=os.getenv("base_url"),
-model=os.getenv("model")
-'''
-api_key="sk-KVkLObEvkGRLIQ4Thsoz8w"
-base_url="https://litellm.dccp.pbu.dedalus.com"
-model="bedrock/anthropic.claude-3-5-sonnet-20240620-v1:0"
+api_key=os.getenv("api_key","")
+base_url=os.getenv("base_url", "")
+model=os.getenv("model", "")
 
 # Instancia el modelo
 llm = ChatOpenAI(
