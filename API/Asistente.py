@@ -83,8 +83,8 @@ class Asistente:
         except Exception as e:
             print(f"\033[91mError: {e}\033[0m")
             return "Se ha producido un error, vuelva a intentarlo"
-
-Asistente = Asistente()
+"""
+# Asistente = Asistente()
 
 # Bucle para conversación
 while True:
@@ -98,3 +98,4 @@ while True:
     bot_response = Asistente.assitant(user_input)
     # Imprimir respuesta del asistente
     print("Asistente:", bot_response)
+"""
