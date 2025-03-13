@@ -1,4 +1,4 @@
-from idlelib.run import print_exception
+# pip install tabulate
 
 import pandas as pd
 from langchain_openai import ChatOpenAI
@@ -6,7 +6,6 @@ from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_community.chat_message_histories import ChatMessageHistory
 from langchain_experimental.agents.agent_toolkits.csv.base import create_pandas_dataframe_agent
-from langchain.schema import StrOutputParser
 
 import os
 from dotenv import load_dotenv
@@ -62,7 +61,7 @@ class Asistente:
 
         # Definir un Runnable con historial de mensajes
         self.chat = RunnableWithMessageHistory(
-            agent_executor, # | StrOutputParser(),
+            agent_executor,
             get_session_history=self.get_session_history,
             # handle_parsing_errors=True
         )
@@ -83,19 +82,3 @@ class Asistente:
         except Exception as e:
             print(f"\033[91mError: {e}\033[0m")
             return "Se ha producido un error, vuelva a intentarlo"
-"""
-# Asistente = Asistente()
-
-# Bucle para conversación
-while True:
-    # Pregunta al usuario
-    user_input = input("Tú: ")
-    # Permite salir del bucle
-    if user_input.lower() in ['salir', 'exit', 'quitar', 'adiós']:
-        print("Asistente: ¡Hasta luego!")
-        break
-    # Obtener respuesta del asistente
-    bot_response = Asistente.assitant(user_input)
-    # Imprimir respuesta del asistente
-    print("Asistente:", bot_response)
-"""
