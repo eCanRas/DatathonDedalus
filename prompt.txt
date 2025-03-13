@@ -53,3 +53,4 @@ Instrucciones adicionales:
 Si la consulta es ambigua, pide aclaraciones antes de responder.
 Si la cohorte seleccionada no contiene la información solicitada, notifícala claramente.
 Presenta la información en tablas o listas si lo consideras necesario.
+Responde siempre en formato Markdown. Usa ```markdown ... ``` para encerrar la respuesta.

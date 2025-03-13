@@ -1,3 +1,5 @@
+from idlelib.run import print_exception
+
 import pandas as pd
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage, SystemMessage
@@ -11,21 +13,20 @@ from dotenv import load_dotenv
 class Asistente:
 
     """Lee el prompt para el asistente desde un archivo de texto."""
-    def _cargar_prompt(self, archivo):
+    def cargar_prompt(self, archivo):
         with open(archivo, "r", encoding="utf-8") as f:
             return f.read()
 
     """Función para obtener el historial de una sesión"""
-    def _get_session_history(self, memory):
-        return memory
+    def get_session_history(self):
+        return self.memory
 
-    """Constructor de la clase
-        """
+    """Constructor de la clase"""
     def __init__(self):
         # Ubicacion del prompt
         archivo_prompt = "Prompt.txt"
         #Carga el prompt
-        self.promptAssistant = self._cargar_prompt(archivo_prompt)
+        self.promptAssistant = self.cargar_prompt(archivo_prompt)
 
         # Cargar las variables de entorno desde .env
         load_dotenv()
@@ -41,7 +42,7 @@ class Asistente:
         )
 
         # Memoria de historial de conversación
-        memory = ChatMessageHistory()
+        self.memory = ChatMessageHistory()
 
         # Crea el agente para cargar el csv
         agent_executor = create_pandas_dataframe_agent(
@@ -61,7 +62,7 @@ class Asistente:
         # Definir un Runnable con historial de mensajes
         self.chat = RunnableWithMessageHistory(
             agent_executor,
-            get_session_history=self._get_session_history(memory),
+            get_session_history=self.get_session_history,
             # handle_parsing_errors=True
         )
 
@@ -78,8 +79,8 @@ class Asistente:
             )
             return response["output"]
         except Exception as e:
-            print(e)
-            return "ERROR"
+            print(f"\033[91mError: {e}\033[0m")
+            return "Se ha producido un error, vuelva a intentarlo"
 
 Asistente = Asistente()
 
