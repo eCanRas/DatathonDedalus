@@ -6,6 +6,7 @@ from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_community.chat_message_histories import ChatMessageHistory
 from langchain_experimental.agents.agent_toolkits.csv.base import create_pandas_dataframe_agent
+from langchain.schema import StrOutputParser
 
 import os
 from dotenv import load_dotenv
@@ -48,12 +49,12 @@ class Asistente:
         agent_executor = create_pandas_dataframe_agent(
             llm,
             # Carga los ficheros
-            [pd.read_csv(".\\DATA\\cohorte_alegias.csv"),
-            pd.read_csv(".\\DATA\\cohorte_condiciones.csv"),
-            pd.read_csv(".\\DATA\\cohorte_encuentros.csv"),
-            pd.read_csv(".\\DATA\\cohorte_medicationes.csv"),
-            pd.read_csv(".\\DATA\\cohorte_pacientes.csv"),
-            pd.read_csv(".\\DATA\\cohorte_procedimientos.csv")],
+            [pd.read_csv("..\\DATA\\cohorte_alegias.csv"),
+            pd.read_csv("..\\DATA\\cohorte_condiciones.csv"),
+            pd.read_csv("..\\DATA\\cohorte_encuentros.csv"),
+            pd.read_csv("..\\DATA\\cohorte_medicationes.csv"),
+            pd.read_csv("..\\DATA\\cohorte_pacientes.csv"),
+            pd.read_csv("..\\DATA\\cohorte_procedimientos.csv")],
             verbose=True,
             allow_dangerous_code=True,
             # handle_parsing_errors=True
@@ -61,7 +62,7 @@ class Asistente:
 
         # Definir un Runnable con historial de mensajes
         self.chat = RunnableWithMessageHistory(
-            agent_executor,
+            agent_executor, # | StrOutputParser(),
             get_session_history=self.get_session_history,
             # handle_parsing_errors=True
         )
@@ -77,6 +78,7 @@ class Asistente:
                     HumanMessage(content=user_input)
                 ],
             )
+            print(response)
             return response["output"]
         except Exception as e:
             print(f"\033[91mError: {e}\033[0m")
