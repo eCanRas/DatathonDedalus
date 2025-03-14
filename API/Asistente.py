@@ -6,6 +6,8 @@ from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_community.chat_message_histories import ChatMessageHistory
 from langchain_experimental.agents.agent_toolkits.csv.base import create_pandas_dataframe_agent
+from langchain_core.output_parsers import StrOutputParser
+from langchain.output_parsers.fix import  OutputFixingParser
 
 import os
 from dotenv import load_dotenv
@@ -56,18 +58,19 @@ class Asistente:
             pd.read_csv("..\\DATA\\cohorte_procedimientos.csv")],
             verbose=True,
             allow_dangerous_code=True,
-            # handle_parsing_errors=True
+            # return_intermediate_steps=True,
+            handle_parsing_errors=True
         )
 
         # Definir un Runnable con historial de mensajes
         self.chat = RunnableWithMessageHistory(
             agent_executor,
             get_session_history=self.get_session_history,
-            # handle_parsing_errors=True
+            handle_parsing_errors=True
         )
 
         # Función que llama al asistente e inyecta los datos del CSV
-    def assitant(self, user_input):
+    def assistant(self, user_input):
         try:
             response = self.chat.invoke(
                 [
@@ -77,8 +80,13 @@ class Asistente:
                     HumanMessage(content=user_input)
                 ],
             )
-            print(response)
+            #print(response)
             return response["output"]
         except Exception as e:
             print(f"\033[91mError: {e}\033[0m")
+            """if "OUTPUT_PARSING_FAILURE" in str(e) or "Could not parse LLM output" in str(e):
+                try:
+                    return self.chat.predict(f"Based on the surgical plan data, please answer: {user_input}")
+                except:
+                    pass"""
             return "Se ha producido un error, vuelva a intentarlo"

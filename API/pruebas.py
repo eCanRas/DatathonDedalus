@@ -11,6 +11,6 @@ while True:
         print("Asistente: ¡Hasta luego!")
         break
     # Obtener respuesta del asistente
-    bot_response = Asistente.assitant(user_input)
+    bot_response = Asistente.assistant(user_input)
     # Imprimir respuesta del asistente
     print("Asistente:", bot_response)
