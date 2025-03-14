@@ -1,0 +1,23 @@
+{
+    "custom_fonts": [],
+    "variables": {
+        "light": {
+            "--background": "210 100% 95%", 
+            "--foreground": "210 20% 20%",   
+            "--primary": "120 100% 50%",     
+            "--primary-foreground": "0 0% 100%", 
+            "--secondary": "120 80% 60%",     
+            "--secondary-foreground": "0 0% 100%",
+            "--muted": "210 20% 90%",         
+            "--muted-foreground": "210 20% 20%" 
+        },
+        "dark": {
+            "--background": "210 20% 10%",    
+            "--foreground": "210 80% 90%",   
+            "--primary": "120 100% 50%",     
+            "--primary-foreground": "0 0% 100%",
+            "--secondary": "120 80% 60%",     
+            "--secondary-foreground": "0 0% 100%" 
+        }
+    }
+}
