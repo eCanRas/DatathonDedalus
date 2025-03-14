@@ -13,6 +13,11 @@ async def main(message: cl.Message):
     if message.content in ['salir', 'exit', 'quitar', 'adiós']:
         await cl.Message(content="Si necesitas más infomación, aquí estará Castor para ayudarle en investigación").send()
         exit()
-    bot_response = asistente.assitant(message.content)
-    await cl.Message(content=bot_response, author="Asistente").send()
+
+    response = cl.Message(content= "🛑 **Procesando...**", author="Asistente")    
+    await response.send()
+
+    response.content = asistente.assistant(message.content)
+    
+    await response.update()
 
