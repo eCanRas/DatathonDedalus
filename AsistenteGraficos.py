@@ -24,7 +24,7 @@ class CodeCaptureCallback(BaseCallbackHandler):
             self.code_snippets.append(input_str)  # Guarda el código generado
 
 
-class Asistente:
+class AsistenteGraficos:
 
     """Lee el prompt para el asistente desde un archivo de texto."""
     def cargar_prompt(self, archivo):
@@ -38,14 +38,14 @@ class Asistente:
     """Constructor de la clase"""
     def __init__(self):
         # Ubicacion del prompt
-        archivo_prompt = "Prompt.txt"
+        archivo_prompt = "API/prompt.txt"
         #Carga el prompt
         self.promptAssistant = self.cargar_prompt(archivo_prompt)
 
         self.capture_callback = CodeCaptureCallback()
 
         # Cargar las variables de entorno desde .env
-        load_dotenv()
+        load_dotenv(dotenv_path="API/.env")
         api_key=os.getenv("api_key","")
         base_url=os.getenv("base_url", "")
         model=os.getenv("model", "")
@@ -104,13 +104,15 @@ class Asistente:
         try:
             local_vars = {"plt": plt, "pd": pd, **self.dataframes}  # Variables disponibles
 
-            exec(code, {}, local_vars)  # 🚀 Ejecutamos el código generado
+            exec(code, {}, local_vars)  # Ejecutamos el código generado
+            plt.close() # cierra gráfica anterior
 
+            plt.show()
             # Guardar la imagen si se generó una figura
             if plt.gcf().get_axes():  # ✅ Si hay una gráfica activa
                 img_bytes = io.BytesIO()
                 plt.savefig(img_bytes, format="png")
-                plt.close()  # Cerrar la figura
+                #plt.close()  # Cerrar la figura
                 img_bytes.seek(0)
                 return img_bytes
             else:
@@ -140,7 +142,7 @@ class Asistente:
             print(f"\033[91mError: {e}\033[0m")
             return "Se ha producido un error, vuelva a intentarlo"
 
-Asistente = Asistente()
+Asistente = AsistenteGraficos()
 
 # Bucle para conversación
 while True:
@@ -159,7 +161,7 @@ while True:
     print("Asistente:", bot_response)
 
     # Verificar si el callback ha capturado código
-    if Asistente.capture_callback.code_snippets and "gráfica" in user_input:
+    if Asistente.capture_callback.code_snippets and ["gráfica", "gráfico"] in user_input:
         # Obtener el último código generado
         generated_code = Asistente.capture_callback.code_snippets[-1]
 
