@@ -12,6 +12,8 @@ from langchain.output_parsers.fix import  OutputFixingParser
 import os
 from dotenv import load_dotenv
 
+import re
+
 # Instancia de FastAPI
 app = Flask(__name__)
 
@@ -44,7 +46,8 @@ class Asistente:
         llm = ChatOpenAI(
             api_key=api_key,
             base_url=base_url,
-            model=model
+            model=model,
+            temperature=0
         )
 
         # Memoria de historial de conversación
@@ -63,14 +66,14 @@ class Asistente:
             verbose=True,
             allow_dangerous_code=True,
             # return_intermediate_steps=True,
-            # handle_parsing_errors=True
+            handle_parsing_errors=True
         )
 
         # Definir un Runnable con historial de mensajes
         self.chat = RunnableWithMessageHistory(
             agent_executor,
             get_session_history=self.get_session_history,
-            # handle_parsing_errors=True
+            handle_parsing_errors=True
         )
 
         # Función que llama al asistente e inyecta los datos del CSV
@@ -87,12 +90,11 @@ class Asistente:
             #print(response)
             return response["output"]
         except Exception as e:
-            print(f"\033[91mError: {e}\033[0m")
-            """if "OUTPUT_PARSING_FAILURE" in str(e) or "Could not parse LLM output" in str(e):
-                try:
-                    return self.chat.predict(f"Based on the surgical plan data, please answer: {user_input}")
-                except:
-                    pass"""
+            if " Could not parse LLM output" in str(e):
+                resultado = str(e).split("`")
+                return resultado[3]
+            else:
+                print(f"\033[91mError: {e}\033[0m")
             return "Se ha producido un error, vuelva a intentarlo"
         
 
@@ -109,7 +111,8 @@ def asistente_endpoint():
         return jsonify({"message": "No se ha enviado un mensaje"})
     
     response = asistente.assistant(user_message)
-    return jsonify({"message": response})
+    response = jsonify({"message": response})
+    return response
 
 if __name__ == "__main__":
     app.run(host="127.0.0.1", port=5000, debug=True)
