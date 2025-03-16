@@ -17,8 +17,10 @@ class Asistente:
             return f.read()
 
     """Función para obtener el historial de una sesión"""
-    def get_session_history(self):
-        return self.memory
+    def get_session_history(self, session_id):
+        if session_id not in self.memory:
+            self.memory[session_id] = ChatMessageHistory()
+        return self.memory[session_id]
 
     """Constructor de la clase"""
     def __init__(self):
@@ -42,7 +44,7 @@ class Asistente:
         )
 
         # Memoria de historial de conversación
-        self.memory = ChatMessageHistory()
+        self.memory = {}
 
         # Crea el agente para cargar el csv
         agent_executor = create_pandas_dataframe_agent(
@@ -68,7 +70,7 @@ class Asistente:
         )
 
         # Función que llama al asistente e inyecta los datos del CSV
-    def assistant(self, user_input):
+    def assistant(self, user_input, user_id):
         try:
             response = self.chat.invoke(
                 [
@@ -77,6 +79,7 @@ class Asistente:
                     # Prompt del usuario
                     HumanMessage(content=user_input)
                 ],
+                config={"configurable": {"session_id": user_id}}  # Pasar identificador de sesión
             )
             #print(response)
             return response["output"]

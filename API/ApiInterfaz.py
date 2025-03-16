@@ -13,11 +13,12 @@ asistente = Asistente()
 def asistente_endpoint():
     data = request.get_json()  # recibe el JSON enviado por interfaz
     user_message = data.get("message", "")  # obtiene el mensaje del usuario
+    user_id = data.get("user_id", "")
 
     if not user_message:
         return jsonify({"message": "No se ha enviado un mensaje"})
 
-    response = asistente.assistant(user_message)
+    response = asistente.assistant(user_message, user_id)
     response = jsonify({"message": response})
     return response
 
