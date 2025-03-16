@@ -42,7 +42,9 @@ async def main(message: cl.Message):
         respuesta_asistente.content += char  # Añadimos letra por letra al mensaje
         await respuesta_asistente.update()  # Actualizamos el mensaje en la interfaz
         await asyncio.sleep(0.001)  # Pequeña pausa para simular el efecto de escritura
-
+    respuesta_asistente.content += "\n\n🦫 ¿En qué más puedo ayudarte?"
+    # respuesta_asistente.content += cl.user_session.get("id")
+    await respuesta_asistente.update()
 @cl.on_chat_end
 async def goodbye():
     await cl.Message(content="Gracias por usar Castor. ¡Hasta luego!").send()
