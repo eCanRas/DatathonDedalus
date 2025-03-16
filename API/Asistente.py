@@ -1,22 +1,13 @@
 # pip install tabulate
-from flask import Flask, request, jsonify
 import pandas as pd
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_community.chat_message_histories import ChatMessageHistory
 from langchain_experimental.agents.agent_toolkits.csv.base import create_pandas_dataframe_agent
-from langchain_core.output_parsers import StrOutputParser
-from langchain.output_parsers.fix import  OutputFixingParser
 
 import os
 from dotenv import load_dotenv
-
-import re
-
-# Instancia de FastAPI
-app = Flask(__name__)
-
 
 class Asistente:
 
@@ -96,23 +87,3 @@ class Asistente:
             else:
                 print(f"\033[91mError: {e}\033[0m")
             return "Se ha producido un error, vuelva a intentarlo"
-        
-
-#Instanciar el asistente
-asistente = Asistente()
-
-#Endpoint para recibir peticiones
-@app.route("/asistente", methods=["POST"])
-def asistente_endpoint():
-    data = request.get_json() #recibe el JSON enviado por interfaz
-    user_message = data.get("message", "") #obtiene el mensaje del usuario
-
-    if not user_message:
-        return jsonify({"message": "No se ha enviado un mensaje"})
-    
-    response = asistente.assistant(user_message)
-    response = jsonify({"message": response})
-    return response
-
-if __name__ == "__main__":
-    app.run(host="127.0.0.1", port=5000, debug=True)
