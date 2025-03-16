@@ -1,6 +1,8 @@
 import chainlit as cl
 import httpx # cliente HTTP para enviar solicitudes a la API
 
+import asyncio
+
 # Variable para almacenar el asistente (pero sin instanciarlo aún)
 asistente = None  
 
@@ -35,8 +37,11 @@ async def main(message: cl.Message):
         respuesta = f"⚠️ Error inesperado: {e}"
 
     # Enviar la respuesta final
-    respuesta_asistente.content = respuesta
-    await respuesta_asistente.update()
+    respuesta_asistente.content = ""
+    for char in respuesta:
+        respuesta_asistente.content += char  # Añadimos letra por letra al mensaje
+        await respuesta_asistente.update()  # Actualizamos el mensaje en la interfaz
+        await asyncio.sleep(0.001)  # Pequeña pausa para simular el efecto de escritura
 
 @cl.on_chat_end
 async def goodbye():
