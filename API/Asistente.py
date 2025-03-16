@@ -1,13 +1,10 @@
 # pip install tabulate
-
 import pandas as pd
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_community.chat_message_histories import ChatMessageHistory
 from langchain_experimental.agents.agent_toolkits.csv.base import create_pandas_dataframe_agent
-from langchain_core.output_parsers import StrOutputParser
-from langchain.output_parsers.fix import  OutputFixingParser
 
 import os
 from dotenv import load_dotenv
@@ -40,7 +37,8 @@ class Asistente:
         llm = ChatOpenAI(
             api_key=api_key,
             base_url=base_url,
-            model=model
+            model=model,
+            temperature=0
         )
 
         # Memoria de historial de conversación
@@ -83,10 +81,9 @@ class Asistente:
             #print(response)
             return response["output"]
         except Exception as e:
-            print(f"\033[91mError: {e}\033[0m")
-            """if "OUTPUT_PARSING_FAILURE" in str(e) or "Could not parse LLM output" in str(e):
-                try:
-                    return self.chat.predict(f"Based on the surgical plan data, please answer: {user_input}")
-                except:
-                    pass"""
+            if " Could not parse LLM output" in str(e):
+                resultado = str(e).split("`")
+                return resultado[3]
+            else:
+                print(f"\033[91mError: {e}\033[0m")
             return "Se ha producido un error, vuelva a intentarlo"
