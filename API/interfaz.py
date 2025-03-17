@@ -1,6 +1,7 @@
 import chainlit as cl
+from chainlit.input_widget import Select, Switch
 import httpx # cliente HTTP para enviar solicitudes a la API
-
+import os
 import asyncio
 
 # Variable para almacenar el asistente (pero sin instanciarlo aún)
@@ -79,6 +80,14 @@ async def main(message: cl.Message):
         respuesta_asistente.content += char  # Añadimos letra por letra al mensaje
         await respuesta_asistente.update()  # Actualizamos el mensaje en la interfaz
         await asyncio.sleep(0.001)  # Pequeña pausa para simular el efecto de escritura
+
+    if data.get("pdf"):
+        pdf_url = data.get("pdf")
+        elements = [ cl.Pdf(name="Descargar PDF", path=pdf_url) ]
+        await cl.Message(content="Haz clic en el enlace para descargar el PDF:", elements=elements).send()
+        os.remove(pdf_url)
+
+
     respuesta_asistente.content += "\n\n🦫 ¿En qué más puedo ayudarte?"
     # respuesta_asistente.content += cl.user_session.get("id")
     await respuesta_asistente.update()

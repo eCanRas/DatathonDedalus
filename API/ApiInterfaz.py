@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 from Asistente import  Asistente
-
+import os
+import base64
 # Instancia de FastAPI
 app = Flask(__name__)
 
@@ -19,7 +20,11 @@ def asistente_endpoint():
         return jsonify({"message": "No se ha enviado un mensaje"})
 
     response = asistente.assistant(user_message, user_id)
-    response = jsonify({"message": response})
+    pdf_path="output.pdf"
+    if (os.path.exists(pdf_path)):
+        response = response = jsonify({"message": response, "pdf": pdf_path})
+    else:    
+        response = jsonify({"message": response})
     return response
 
 

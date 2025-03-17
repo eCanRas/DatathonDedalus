@@ -5,10 +5,11 @@ from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_community.chat_message_histories import ChatMessageHistory
 from langchain_experimental.agents.agent_toolkits.csv.base import create_pandas_dataframe_agent
-
+from fpdf import FPDF
 import os
 from dotenv import load_dotenv
-
+from datetime import datetime
+import io
 class Asistente:
 
     """Lee el prompt para el asistente desde un archivo de texto."""
@@ -22,6 +23,16 @@ class Asistente:
             self.memory[session_id] = ChatMessageHistory()
         return self.memory[session_id]
 
+    """Funcion para generar el pdf"""
+    def generar_pdf(self, text):
+        pdf = FPDF()
+        pdf.add_page()
+        pdf.set_font("Arial", size=12)
+        pdf.cell(200, 10, txt=text, ln=True, align="C")
+        # timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+        nombre_pdf = "output.pdf"
+        pdf.output(nombre_pdf)
+                   
     """Constructor de la clase"""
     def __init__(self):
         # Ubicacion del prompt
@@ -46,6 +57,7 @@ class Asistente:
         # Memoria de historial de conversación
         self.memory = {}
 
+
         # Crea el agente para cargar el csv
         agent_executor = create_pandas_dataframe_agent(
             llm,
@@ -61,6 +73,7 @@ class Asistente:
             # return_intermediate_steps=True,
             handle_parsing_errors=True
         )
+
 
         # Definir un Runnable con historial de mensajes
         self.chat = RunnableWithMessageHistory(
@@ -82,7 +95,11 @@ class Asistente:
                 config={"configurable": {"session_id": user_id}}  # Pasar identificador de sesión
             )
             #print(response)
+            if "pdf" in user_input:
+                #print("RESPONSE: ", response["output"])
+                self.generar_pdf(response["output"])
             return response["output"]
+        
         except Exception as e:
             if " Could not parse LLM output" in str(e):
                 resultado = str(e).split("`")
