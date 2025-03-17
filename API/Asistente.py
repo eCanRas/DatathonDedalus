@@ -5,7 +5,7 @@ from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_community.chat_message_histories import ChatMessageHistory
 from langchain_experimental.agents.agent_toolkits.csv.base import create_pandas_dataframe_agent
-from fpdf import FPDF
+from fpdf import FPDF, HTMLMixin
 import os
 from dotenv import load_dotenv
 from datetime import datetime
@@ -28,8 +28,7 @@ class Asistente:
         pdf = FPDF()
         pdf.add_page()
         pdf.set_font("Arial", size=12)
-        pdf.cell(200, 10, txt=text, ln=True, align="C")
-        # timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+        pdf.cell(200, 10, txt=text, ln=True, align="L")
         nombre_pdf = "output.pdf"
         pdf.output(nombre_pdf)
                    

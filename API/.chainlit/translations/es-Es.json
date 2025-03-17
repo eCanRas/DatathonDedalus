@@ -1,0 +1,214 @@
+{
+    "common": {
+        "actions": {
+            "cancel": "Cancelar",
+            "confirm": "Confirmar",
+            "continue": "Continuar",
+            "goBack": "Retroceder",
+            "reset": "Reiniciar",
+            "submit": "Enviar"
+        },
+        "status": {
+            "loading": "Cargando...",
+            "error": {
+                "default": "Ha ocurrido un error",
+                "serverConnection": "No se pudo conectar al servidor"
+            }
+        }
+    },
+    "auth": {
+        "login": {
+            "title": "Login to access the app",
+            "form": {
+                "email": {
+                    "label": "Email address",
+                    "required": "email is a required field"
+                },
+                "password": {
+                    "label": "Password",
+                    "required": "password is a required field"
+                },
+                "actions": {
+                    "signin": "Sign In"
+                },
+                "alternativeText": {
+                    "or": "OR"
+                }
+            },
+            "errors": {
+                "default": "Unable to sign in",
+                "signin": "Try signing in with a different account",
+                "oauthSignin": "Try signing in with a different account",
+                "redirectUriMismatch": "The redirect URI is not matching the oauth app configuration",
+                "oauthCallback": "Try signing in with a different account",
+                "oauthCreateAccount": "Try signing in with a different account",
+                "emailCreateAccount": "Try signing in with a different account",
+                "callback": "Try signing in with a different account",
+                "oauthAccountNotLinked": "To confirm your identity, sign in with the same account you used originally",
+                "emailSignin": "The e-mail could not be sent",
+                "emailVerify": "Please verify your email, a new email has been sent",
+                "credentialsSignin": "Sign in failed. Check the details you provided are correct",
+                "sessionRequired": "Please sign in to access this page"
+            }
+        },
+        "provider": {
+            "continue": "Continue with {{provider}}"
+        }
+    },
+    "chat": {
+        "input": {
+            "placeholder": "Escribe aquí tu mensaje...",
+            "actions": {
+                "send": "Enviar mensaje",
+                "stop": "Detener tarea",
+                "attachFiles": "Adjuntar archivos"
+            }
+        },
+        "speech": {
+            "start": "Start recording",
+            "stop": "Stop recording",
+            "connecting": "Connecting"
+        },
+        "fileUpload": {
+            "dragDrop": "Drag and drop files here",
+            "browse": "Browse Files",
+            "sizeLimit": "Limit:",
+            "errors": {
+                "failed": "Failed to upload",
+                "cancelled": "Cancelled upload of"
+            }
+        },
+        "messages": {
+            "status": {
+                "using": "En uso",
+                "used": "Usado"
+            },
+            "actions": {
+                "copy": {
+                    "button": "Copiar al portapapeles",
+                    "success": "¡Copiado!"
+                }
+            },
+            "feedback": {
+                "positive": "Útil",
+                "negative": "No útil",
+                "edit": "Editar feedback",
+                "dialog": {
+                    "title": "Añadir comentario",
+                    "submit": "Enviar feedback"
+                },
+                "status": {
+                    "updating": "Actualizando",
+                    "updated": "Feedback actualizado"
+                }
+            }
+        },
+        "history": {
+            "title": "Últimas entradas",
+            "empty": "Vacío...",
+            "show": "Mostrar historial"
+        },
+        "settings": {
+            "title": "Configuración"
+        },
+        "watermark": ""
+    },
+    "threadHistory": {
+        "sidebar": {
+            "title": "Historial de conversaciones",
+            "filters": {
+                "search": "Buscar",
+                "placeholder": "Buscar conversaciones..."
+            },
+            "timeframes": {
+                "today": "Hoy",
+                "yesterday": "Ayer",
+                "previous7days": "Últimos 7 días",
+                "previous30days": "Últimos 30 días"
+            },
+            "empty": "No se encontraron conversaciones",
+            "actions": {
+                "close": "Cerrar barra lateral",
+                "open": "Abrir barra lateral"
+            }
+        },
+        "thread": {
+            "untitled": "Conversación sin título",
+            "menu": {
+                "rename": "Renombrar",
+                "delete": "Eliminar"
+            },
+            "actions": {
+                "delete": {
+                    "title": "Eliminar conversación",
+                    "description": "¿Estás seguro de que quieres eliminar esta conversación?",
+                    "success": "¡Conversación eliminada!",
+                    "inProgress": "Eliminando conversación"
+                },
+                "rename": {
+                    "title": "Renombrar conversación",
+                    "description": "Introduce un nuevo nombre para esta conversación",
+                    "form": {
+                        "name": {
+                            "label": "Nombre",
+                            "placeholder": "Introduce un nuevo nombre"
+                        }
+                    },
+                    "success": "¡Conversación renombrada!",
+                    "inProgress": "Renombrando conversación"
+                }
+            }
+        }
+    },
+    "navigation": {
+        "header": {
+            "chat": "Chat",
+            "readme": "Readme",
+            "theme": {
+                "light": "Tema claro",
+                "dark": "Tema oscuro",
+                "system": "Seguir sistema"
+            }
+        },
+        "newChat": {
+            "button": "Nuevo chat",
+            "dialog": {
+                "title": "Crea un nuevo chat",
+                "description": "Esto borrará tu actual chat. ¿Estás seguro de que quieres continuar?",
+                "tooltip": "Nuevo chat"
+            }
+        },
+        "user": {
+            "menu": {
+                "settings": "Configuración",
+                "settingsKey": "S",
+                "apiKeys": "API Keys",
+                "logout": "Cerrar sesión"
+            }
+        }
+    },
+    "apiKeys": {
+        "title": "Required API Keys",
+        "description": "To use this app, the following API keys are required. The keys are stored on your device's local storage.",
+        "success": {
+            "saved": "Saved successfully"
+        }
+    },
+    "alerts": {
+        "info": "Información",
+        "note": "Nota",
+        "tip": "Consejo",
+        "important": "Importante",
+        "warning": "Advertencia",
+        "caution": "Precaución",
+        "debug": "Debug",
+        "example": "Ejemplo",
+        "success": "Éxito",
+        "help": "Ayuda",
+        "idea": "Idea",
+        "pending": "Pendiente",
+        "security": "Seguridad",
+        "beta": "Beta",
+        "best-practice": "Best Practice"
+    }
+}
