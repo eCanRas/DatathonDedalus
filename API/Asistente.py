@@ -35,6 +35,16 @@ class Asistente:
         base_url=os.getenv("base_url", "")
         model=os.getenv("model", "")
 
+        # Cargar los ficheros como DataFrames
+        dfs = [
+            pd.read_csv("..\\DATA\\cohorte_alegias.csv"),
+            pd.read_csv("..\\DATA\\cohorte_condiciones.csv"),
+            pd.read_csv("..\\DATA\\cohorte_encuentros.csv"),
+            pd.read_csv("..\\DATA\\cohorte_medicationes.csv"),
+            pd.read_csv("..\\DATA\\cohorte_pacientes.csv"),
+            pd.read_csv("..\\DATA\\cohorte_procedimientos.csv"),
+        ]
+
         # Instancia el modelo
         llm = ChatOpenAI(
             api_key=api_key,
@@ -50,15 +60,9 @@ class Asistente:
         agent_executor = create_pandas_dataframe_agent(
             llm,
             # Carga los ficheros
-            [pd.read_csv("..\\DATA\\cohorte_alegias.csv"),
-            pd.read_csv("..\\DATA\\cohorte_condiciones.csv"),
-            pd.read_csv("..\\DATA\\cohorte_encuentros.csv"),
-            pd.read_csv("..\\DATA\\cohorte_medicationes.csv"),
-            pd.read_csv("..\\DATA\\cohorte_pacientes.csv"),
-            pd.read_csv("..\\DATA\\cohorte_procedimientos.csv")],
+            dfs,
             verbose=True,
             allow_dangerous_code=True,
-            # return_intermediate_steps=True,
             handle_parsing_errors=True
         )
 
