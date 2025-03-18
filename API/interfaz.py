@@ -65,6 +65,7 @@ async def main(message: cl.Message):
             data = response.json()
             respuesta = data.get("message", "⚠️ Error en la respuesta de la API")
             url_imagen = data.get("url_imagen", "")
+            url_csv = data.get("url_csv", "")
 
     except httpx.HTTPStatusError as http_err:
         respuesta = f"❌ Error HTTP {http_err.response.status_code}: {http_err}"
@@ -85,8 +86,12 @@ async def main(message: cl.Message):
         await asyncio.sleep(0.001)  # Pequeña pausa para simular el efecto de escritura
 
     if url_imagen != "":
-        elements = [cl.Image(name="Ejemplo", path=f".\\{url_imagen}", display="inline")]
-        await cl.Message(content="Imagen:", elements=elements).send()
+        elements = [cl.Image(name=f"{url_imagen}", path=f".\\{url_imagen}", display="inline")]
+        await cl.Message(content="Gráfico solicitado:", elements=elements).send()
+
+    if url_csv != "":
+        elements = [cl.File(name=f"{url_csv}", path=f".\\{url_csv}", display="inline")]
+        await cl.Message(content="Fichero solicitado:", elements=elements).send()
 
     # respuesta_asistente.content += "\n\n🦫 ¿En qué más puedo ayudarte?"
     # await respuesta_asistente.update()

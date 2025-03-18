@@ -79,7 +79,8 @@ class Asistente:
 
         # Función que llama al asistente e inyecta los datos del CSV
     def assistant(self, user_input, user_id):
-        nombre_fichero = ""
+        url_grafica = ""
+        url_csv = ""
         try:
             response = self.chat.invoke(
                 [
@@ -93,10 +94,13 @@ class Asistente:
 
             # Optiene el nombre de la imagen si se ha generado
             match = re.search(r"'([^']+\.png)'", response["output"])
-            nombre_fichero = ""
             if match:
-                nombre_fichero = match.group(1)
-                print(nombre_fichero)  # Output: edad_media_por_provincia.png
+                url_grafica = match.group(1)
+
+            # Optiene el nombre de la imagen si se ha generado
+            match = re.search(r"'([^']+\.csv)'", response["output"])
+            if match:
+                url_csv = match.group(1)
 
             resultado = response["output"]
         
@@ -109,7 +113,8 @@ class Asistente:
 
         data = {
             "message": resultado,
-            "url_imagen": f"{nombre_fichero}"
+            "url_imagen": f"{url_grafica}",
+            "url_csv": f"{url_csv}"
         }
 
         json_string = jsonify(data)
