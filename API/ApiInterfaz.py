@@ -20,11 +20,7 @@ def asistente_endpoint():
         return jsonify({"message": "No se ha enviado un mensaje"})
 
     response = asistente.assistant(user_message, user_id)
-    pdf_path="output.pdf"
-    if (os.path.exists(pdf_path)):
-        response = response = jsonify({"message": response, "pdf": pdf_path})
-    else:    
-        response = jsonify({"message": response})
+
     return response
 
 

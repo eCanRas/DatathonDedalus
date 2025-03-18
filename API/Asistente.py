@@ -1,15 +1,17 @@
 # pip install tabulate
+
 import pandas as pd
+from flask import jsonify
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_community.chat_message_histories import ChatMessageHistory
 from langchain_experimental.agents.agent_toolkits.csv.base import create_pandas_dataframe_agent
-from fpdf import FPDF, HTMLMixin
+
 import os
 from dotenv import load_dotenv
-from datetime import datetime
-import io
+import re
+
 class Asistente:
 
     """Lee el prompt para el asistente desde un archivo de texto."""
@@ -22,15 +24,6 @@ class Asistente:
         if session_id not in self.memory:
             self.memory[session_id] = ChatMessageHistory()
         return self.memory[session_id]
-
-    """Funcion para generar el pdf"""
-    def generar_pdf(self, text):
-        pdf = FPDF()
-        pdf.add_page()
-        pdf.set_font("Arial", size=12)
-        pdf.cell(200, 10, txt=text, ln=True, align="L")
-        nombre_pdf = "output.pdf"
-        pdf.output(nombre_pdf)
                    
     """Constructor de la clase"""
     def __init__(self):
@@ -47,7 +40,7 @@ class Asistente:
 
         # Cargar los ficheros como DataFrames
         dfs = [
-            pd.read_csv("..\\DATA\\cohorte_alegias.csv"),
+            pd.read_csv("..\\DATA\\cohorte_alergias.csv"),
             pd.read_csv("..\\DATA\\cohorte_condiciones.csv"),
             pd.read_csv("..\\DATA\\cohorte_encuentros.csv"),
             pd.read_csv("..\\DATA\\cohorte_medicationes.csv"),
@@ -65,7 +58,6 @@ class Asistente:
 
         # Memoria de historial de conversación
         self.memory = {}
-
 
         # Crea el agente para cargar el csv
         agent_executor = create_pandas_dataframe_agent(
@@ -87,6 +79,7 @@ class Asistente:
 
         # Función que llama al asistente e inyecta los datos del CSV
     def assistant(self, user_input, user_id):
+        nombre_fichero = ""
         try:
             response = self.chat.invoke(
                 [
@@ -97,16 +90,28 @@ class Asistente:
                 ],
                 config={"configurable": {"session_id": user_id}}  # Pasar identificador de sesión
             )
-            #print(response)
-            if "pdf" in user_input:
-                #print("RESPONSE: ", response["output"])
-                self.generar_pdf(response["output"])
-            return response["output"]
+
+            # Optiene el nombre de la imagen si se ha generado
+            match = re.search(r"'([^']+\.png)'", response["output"])
+            nombre_fichero = ""
+            if match:
+                nombre_fichero = match.group(1)
+                print(nombre_fichero)  # Output: edad_media_por_provincia.png
+
+            resultado = response["output"]
         
         except Exception as e:
             if " Could not parse LLM output" in str(e):
-                resultado = str(e).split("`")
-                return resultado[3]
+                resultado = str(e).split("`")[3]
             else:
                 print(f"\033[91mError: {e}\033[0m")
-            return "Se ha producido un error, vuelva a intentarlo"
+                resultado =  "Se ha producido un error, vuelva a intentarlo"
+
+        data = {
+            "message": resultado,
+            "url_imagen": f"{nombre_fichero}"
+        }
+
+        json_string = jsonify(data)
+
+        return json_string

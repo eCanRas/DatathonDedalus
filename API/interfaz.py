@@ -1,7 +1,6 @@
+
 import chainlit as cl
-from chainlit.input_widget import Select, Switch
 import httpx # cliente HTTP para enviar solicitudes a la API
-import os
 import asyncio
 
 # Variable para almacenar el asistente (pero sin instanciarlo aún)
@@ -46,6 +45,9 @@ async def main(message: cl.Message):
     # Obtener el ID de la conversación (sesión del usuario)
     conversation_id = cl.user_session.get("id")
 
+    respuesta = ""
+    url_imagen = ""
+
     try:
         async with httpx.AsyncClient() as client:
 
@@ -62,6 +64,7 @@ async def main(message: cl.Message):
             # Convertir la respuesta a JSON
             data = response.json()
             respuesta = data.get("message", "⚠️ Error en la respuesta de la API")
+            url_imagen = data.get("url_imagen", "")
 
     except httpx.HTTPStatusError as http_err:
         respuesta = f"❌ Error HTTP {http_err.response.status_code}: {http_err}"
@@ -81,16 +84,13 @@ async def main(message: cl.Message):
         await respuesta_asistente.update()  # Actualizamos el mensaje en la interfaz
         await asyncio.sleep(0.001)  # Pequeña pausa para simular el efecto de escritura
 
-    if data.get("pdf"):
-        pdf_url = data.get("pdf")
-        elements = [ cl.Pdf(name="Descargar PDF", path=pdf_url) ]
-        await cl.Message(content="Haz clic en el enlace para descargar el PDF:", elements=elements).send()
-        os.remove(pdf_url)
+    if url_imagen != "":
+        elements = [cl.Image(name="Ejemplo", path=f".\\{url_imagen}", display="inline")]
+        await cl.Message(content="Imagen:", elements=elements).send()
 
+    # respuesta_asistente.content += "\n\n🦫 ¿En qué más puedo ayudarte?"
+    # await respuesta_asistente.update()
 
-    respuesta_asistente.content += "\n\n🦫 ¿En qué más puedo ayudarte?"
-    # respuesta_asistente.content += cl.user_session.get("id")
-    await respuesta_asistente.update()
 @cl.on_chat_end
 async def goodbye():
     await cl.Message(content="Gracias por usar Castor. ¡Hasta luego!").send()
