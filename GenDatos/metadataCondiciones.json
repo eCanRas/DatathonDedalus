@@ -1,0 +1,22 @@
+{
+    "columns": {
+        "PacienteID": {
+            "sdtype": "numerical"
+        },
+        "Fecha_inicio": {
+            "sdtype": "datetime",
+            "datetime_format": "%Y-%m-%d %H:%M:%S.%f"
+        },
+        "Fecha_fin": {
+            "sdtype": "datetime",
+            "datetime_format": "%Y-%m-%d %H:%M:%S.%f"
+        },
+        "Codigo_SNOMED": {
+            "sdtype": "categorical"
+        },
+        "Descripcion": {
+            "sdtype": "categorical"
+        }
+    },
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1"
+}

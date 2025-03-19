@@ -1,0 +1,24 @@
+{
+    "columns": {
+        "PacienteID": {
+            "sdtype": "id"
+        },
+        "Genero": {
+            "sdtype": "categorical"
+        },
+        "Edad": {
+            "sdtype": "numerical"
+        },
+        "Provincia": {
+            "sdtype": "categorical"
+        },
+        "Latitud": {
+            "sdtype": "numerical"
+        },
+        "Longitud": {
+            "sdtype": "numerical"
+        }
+    },
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "primary_key": "PacienteID"
+}

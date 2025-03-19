@@ -1,0 +1,19 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "PacienteID": {
+            "sdtype": "numerical"
+        },
+        "Tipo_encuentro": {
+            "sdtype": "categorical"
+        },
+        "Fecha_inicio": {
+            "sdtype": "datetime",
+            "datetime_format": "%Y-%m-%d"
+        },
+        "Fecha_fin": {
+            "sdtype": "datetime",
+            "datetime_format": "%Y-%m-%d"
+        }
+    }
+}

@@ -1,0 +1,1001 @@
+PacienteID,Fecha_diagnostico,Codigo_SNOMED,Descripcion
+344,2015-03-16,91934008,Alergia a la picadura de abeja
+671,2015-12-19,91936005,Alergia al polen
+245,2015-03-16,91936005,Alergia al polen
+952,2015-03-16,91934008,Alergia a la picadura de abeja
+672,2022-11-26,91930004,Alergia a los ácaros del polvo
+41,2017-06-27,300914000,Alergia a la aspirina
+821,2016-04-17,91934008,Alergia a la picadura de abeja
+982,2020-01-11,300914000,Alergia a la aspirina
+156,2017-04-11,300914000,Alergia a la aspirina
+973,2023-09-08,91932006,Alergia a los mariscos
+54,2019-11-11,91931005,Alergia a la leche
+193,2021-07-09,91934008,Alergia a la picadura de abeja
+302,2023-12-04,414285001,Alergia al látex
+813,2016-09-30,414285001,Alergia al látex
+682,2015-09-19,91936005,Alergia al polen
+123,2017-07-20,91933007,Alergia a los frutos secos
+507,2016-05-14,300913006,Alergia a la penicilina
+429,2018-01-18,91930004,Alergia a los ácaros del polvo
+537,2023-05-13,300913006,Alergia a la penicilina
+102,2019-05-06,300914000,Alergia a la aspirina
+1005,2017-05-23,91936005,Alergia al polen
+301,2023-12-04,91932006,Alergia a los mariscos
+226,2018-10-17,91931005,Alergia a la leche
+705,2015-03-16,91935009,Alergia al pelo de gato
+851,2022-07-28,91932006,Alergia a los mariscos
+1031,2020-08-28,300914000,Alergia a la aspirina
+133,2018-11-12,91932006,Alergia a los mariscos
+252,2023-12-04,91930004,Alergia a los ácaros del polvo
+74,2021-04-06,91933007,Alergia a los frutos secos
+863,2022-02-14,91933007,Alergia a los frutos secos
+41,2021-05-10,91931005,Alergia a la leche
+96,2021-03-31,91933007,Alergia a los frutos secos
+115,2019-11-12,91936005,Alergia al polen
+587,2021-07-16,414285001,Alergia al látex
+353,2019-07-28,300914000,Alergia a la aspirina
+1009,2019-07-20,91933007,Alergia a los frutos secos
+767,2017-08-05,414285001,Alergia al látex
+391,2017-12-20,91935009,Alergia al pelo de gato
+114,2020-05-29,91935009,Alergia al pelo de gato
+635,2017-01-30,91935009,Alergia al pelo de gato
+612,2017-05-29,300913006,Alergia a la penicilina
+306,2022-05-12,91931005,Alergia a la leche
+535,2016-12-20,91934008,Alergia a la picadura de abeja
+120,2022-12-18,91930004,Alergia a los ácaros del polvo
+766,2018-06-07,91932006,Alergia a los mariscos
+143,2021-04-10,91930004,Alergia a los ácaros del polvo
+866,2020-01-10,91930004,Alergia a los ácaros del polvo
+485,2020-04-15,300914000,Alergia a la aspirina
+168,2021-05-03,300913006,Alergia a la penicilina
+457,2020-01-27,91936005,Alergia al polen
+890,2015-03-16,91932006,Alergia a los mariscos
+768,2019-09-17,300914000,Alergia a la aspirina
+347,2021-04-22,91935009,Alergia al pelo de gato
+935,2017-11-26,91934008,Alergia a la picadura de abeja
+480,2020-01-10,91931005,Alergia a la leche
+51,2015-03-16,91932006,Alergia a los mariscos
+674,2020-09-11,300914000,Alergia a la aspirina
+551,2022-06-17,91930004,Alergia a los ácaros del polvo
+237,2017-06-25,91933007,Alergia a los frutos secos
+203,2015-03-16,91932006,Alergia a los mariscos
+190,2015-03-16,300913006,Alergia a la penicilina
+493,2018-10-31,91935009,Alergia al pelo de gato
+881,2018-11-06,91932006,Alergia a los mariscos
+583,2020-10-02,91935009,Alergia al pelo de gato
+90,2021-12-05,300913006,Alergia a la penicilina
+143,2015-11-30,91936005,Alergia al polen
+426,2023-02-04,91935009,Alergia al pelo de gato
+158,2021-04-15,91935009,Alergia al pelo de gato
+739,2019-12-13,91930004,Alergia a los ácaros del polvo
+384,2017-06-03,91936005,Alergia al polen
+1007,2023-12-04,300913006,Alergia a la penicilina
+114,2018-03-07,91934008,Alergia a la picadura de abeja
+492,2020-09-30,91935009,Alergia al pelo de gato
+867,2023-12-04,300914000,Alergia a la aspirina
+575,2016-02-09,91932006,Alergia a los mariscos
+830,2018-02-07,91933007,Alergia a los frutos secos
+834,2022-01-29,91931005,Alergia a la leche
+39,2023-02-18,300914000,Alergia a la aspirina
+145,2021-09-01,91936005,Alergia al polen
+1032,2023-12-04,91935009,Alergia al pelo de gato
+659,2020-09-05,300913006,Alergia a la penicilina
+454,2017-01-31,91933007,Alergia a los frutos secos
+947,2021-03-26,91935009,Alergia al pelo de gato
+922,2020-04-23,91933007,Alergia a los frutos secos
+442,2022-09-30,300913006,Alergia a la penicilina
+59,2015-03-16,91935009,Alergia al pelo de gato
+269,2017-08-30,91936005,Alergia al polen
+460,2019-02-22,91931005,Alergia a la leche
+288,2018-06-27,414285001,Alergia al látex
+980,2023-12-04,300913006,Alergia a la penicilina
+250,2021-10-24,91930004,Alergia a los ácaros del polvo
+316,2022-07-30,91931005,Alergia a la leche
+212,2015-08-12,91935009,Alergia al pelo de gato
+816,2018-05-26,91930004,Alergia a los ácaros del polvo
+941,2018-06-19,300913006,Alergia a la penicilina
+365,2018-11-06,300914000,Alergia a la aspirina
+125,2019-10-21,91936005,Alergia al polen
+163,2016-11-22,91936005,Alergia al polen
+1016,2018-05-26,91936005,Alergia al polen
+508,2020-07-21,91934008,Alergia a la picadura de abeja
+408,2023-12-04,300913006,Alergia a la penicilina
+346,2017-01-13,91936005,Alergia al polen
+827,2018-11-21,91931005,Alergia a la leche
+873,2020-01-13,91934008,Alergia a la picadura de abeja
+333,2017-04-29,300914000,Alergia a la aspirina
+540,2016-05-20,300913006,Alergia a la penicilina
+400,2015-03-16,91934008,Alergia a la picadura de abeja
+294,2019-02-04,300913006,Alergia a la penicilina
+582,2019-05-10,91931005,Alergia a la leche
+766,2023-12-04,91931005,Alergia a la leche
+449,2016-05-24,91936005,Alergia al polen
+296,2018-02-27,91931005,Alergia a la leche
+712,2023-11-09,91936005,Alergia al polen
+439,2023-12-04,91934008,Alergia a la picadura de abeja
+804,2017-02-15,300913006,Alergia a la penicilina
+157,2022-12-31,91936005,Alergia al polen
+39,2023-12-04,300913006,Alergia a la penicilina
+714,2020-01-15,91931005,Alergia a la leche
+948,2019-03-16,91932006,Alergia a los mariscos
+539,2015-03-16,91931005,Alergia a la leche
+972,2015-03-16,91933007,Alergia a los frutos secos
+74,2016-12-30,300914000,Alergia a la aspirina
+918,2016-06-01,300913006,Alergia a la penicilina
+613,2023-12-04,91934008,Alergia a la picadura de abeja
+44,2019-04-13,414285001,Alergia al látex
+442,2018-08-31,91935009,Alergia al pelo de gato
+888,2019-06-07,91936005,Alergia al polen
+1017,2021-02-15,91933007,Alergia a los frutos secos
+678,2016-04-04,91933007,Alergia a los frutos secos
+254,2017-01-12,91935009,Alergia al pelo de gato
+397,2022-11-22,91934008,Alergia a la picadura de abeja
+213,2015-09-24,91932006,Alergia a los mariscos
+177,2015-03-16,414285001,Alergia al látex
+888,2020-10-21,91933007,Alergia a los frutos secos
+550,2016-07-15,300913006,Alergia a la penicilina
+112,2015-03-16,300913006,Alergia a la penicilina
+790,2015-03-16,91931005,Alergia a la leche
+240,2015-06-12,91936005,Alergia al polen
+127,2021-04-06,91934008,Alergia a la picadura de abeja
+147,2021-10-12,91933007,Alergia a los frutos secos
+1011,2018-05-29,91931005,Alergia a la leche
+944,2023-08-26,91936005,Alergia al polen
+314,2020-08-11,91932006,Alergia a los mariscos
+722,2021-07-16,91934008,Alergia a la picadura de abeja
+660,2020-01-06,91936005,Alergia al polen
+483,2023-01-24,414285001,Alergia al látex
+260,2019-03-14,91933007,Alergia a los frutos secos
+328,2020-09-30,91934008,Alergia a la picadura de abeja
+89,2016-08-10,91934008,Alergia a la picadura de abeja
+217,2018-01-24,91932006,Alergia a los mariscos
+422,2018-05-10,300913006,Alergia a la penicilina
+551,2023-12-04,91930004,Alergia a los ácaros del polvo
+756,2023-09-22,91934008,Alergia a la picadura de abeja
+406,2016-04-28,300914000,Alergia a la aspirina
+623,2023-05-23,91930004,Alergia a los ácaros del polvo
+270,2023-02-18,300913006,Alergia a la penicilina
+84,2015-03-16,91936005,Alergia al polen
+816,2023-11-19,91930004,Alergia a los ácaros del polvo
+483,2015-03-16,91930004,Alergia a los ácaros del polvo
+511,2015-03-16,91930004,Alergia a los ácaros del polvo
+783,2021-06-02,300913006,Alergia a la penicilina
+821,2021-01-26,300913006,Alergia a la penicilina
+846,2019-04-05,300914000,Alergia a la aspirina
+713,2015-03-16,91931005,Alergia a la leche
+570,2020-04-19,91936005,Alergia al polen
+720,2023-12-04,300913006,Alergia a la penicilina
+125,2015-03-16,91934008,Alergia a la picadura de abeja
+86,2017-10-24,414285001,Alergia al látex
+52,2018-07-26,91933007,Alergia a los frutos secos
+282,2020-02-21,91934008,Alergia a la picadura de abeja
+676,2015-03-16,91934008,Alergia a la picadura de abeja
+259,2015-10-25,414285001,Alergia al látex
+986,2020-07-30,414285001,Alergia al látex
+385,2023-03-17,91936005,Alergia al polen
+809,2015-03-16,300914000,Alergia a la aspirina
+977,2023-12-04,91934008,Alergia a la picadura de abeja
+850,2019-08-25,300913006,Alergia a la penicilina
+914,2023-04-06,300914000,Alergia a la aspirina
+220,2023-12-04,300913006,Alergia a la penicilina
+671,2019-05-26,91931005,Alergia a la leche
+333,2017-05-21,91935009,Alergia al pelo de gato
+201,2022-04-10,91931005,Alergia a la leche
+745,2021-08-02,91931005,Alergia a la leche
+66,2020-11-05,91936005,Alergia al polen
+506,2021-11-05,91936005,Alergia al polen
+393,2021-11-21,300913006,Alergia a la penicilina
+418,2017-06-28,91931005,Alergia a la leche
+699,2022-03-26,300914000,Alergia a la aspirina
+113,2020-11-13,414285001,Alergia al látex
+1016,2018-04-23,300914000,Alergia a la aspirina
+909,2019-11-19,300913006,Alergia a la penicilina
+582,2021-02-22,91935009,Alergia al pelo de gato
+148,2019-10-13,91930004,Alergia a los ácaros del polvo
+435,2019-07-11,300913006,Alergia a la penicilina
+133,2017-03-07,300914000,Alergia a la aspirina
+875,2021-05-21,91936005,Alergia al polen
+180,2023-12-04,91934008,Alergia a la picadura de abeja
+431,2016-07-04,91936005,Alergia al polen
+439,2021-05-31,414285001,Alergia al látex
+831,2015-03-16,91930004,Alergia a los ácaros del polvo
+662,2023-12-04,91934008,Alergia a la picadura de abeja
+843,2022-11-02,300913006,Alergia a la penicilina
+922,2015-03-16,91930004,Alergia a los ácaros del polvo
+69,2023-10-05,300914000,Alergia a la aspirina
+367,2018-07-05,91930004,Alergia a los ácaros del polvo
+759,2020-10-28,414285001,Alergia al látex
+530,2018-02-06,91934008,Alergia a la picadura de abeja
+240,2016-04-15,91932006,Alergia a los mariscos
+40,2019-10-12,91933007,Alergia a los frutos secos
+764,2022-06-18,91930004,Alergia a los ácaros del polvo
+815,2019-05-24,91936005,Alergia al polen
+971,2016-09-19,91934008,Alergia a la picadura de abeja
+1008,2021-02-17,91930004,Alergia a los ácaros del polvo
+457,2020-09-18,91932006,Alergia a los mariscos
+785,2019-01-24,91930004,Alergia a los ácaros del polvo
+534,2023-12-04,91931005,Alergia a la leche
+970,2017-04-27,91931005,Alergia a la leche
+487,2023-07-15,300913006,Alergia a la penicilina
+47,2020-07-23,91936005,Alergia al polen
+1032,2022-01-08,300913006,Alergia a la penicilina
+811,2019-01-19,91933007,Alergia a los frutos secos
+1033,2021-12-23,91932006,Alergia a los mariscos
+389,2018-10-26,91934008,Alergia a la picadura de abeja
+607,2021-07-17,300913006,Alergia a la penicilina
+786,2023-12-04,91936005,Alergia al polen
+799,2016-03-02,91930004,Alergia a los ácaros del polvo
+1024,2023-10-10,91934008,Alergia a la picadura de abeja
+834,2020-06-01,300914000,Alergia a la aspirina
+805,2021-11-14,91934008,Alergia a la picadura de abeja
+541,2018-08-07,91932006,Alergia a los mariscos
+614,2015-03-16,414285001,Alergia al látex
+816,2022-04-02,91931005,Alergia a la leche
+280,2018-04-08,91936005,Alergia al polen
+406,2021-10-27,91932006,Alergia a los mariscos
+378,2021-08-31,91930004,Alergia a los ácaros del polvo
+532,2022-01-08,91936005,Alergia al polen
+590,2023-12-04,414285001,Alergia al látex
+616,2016-11-13,91933007,Alergia a los frutos secos
+469,2020-02-04,300913006,Alergia a la penicilina
+966,2015-08-24,300913006,Alergia a la penicilina
+395,2015-03-16,91936005,Alergia al polen
+988,2023-12-04,414285001,Alergia al látex
+971,2018-08-20,91935009,Alergia al pelo de gato
+821,2022-05-25,91930004,Alergia a los ácaros del polvo
+122,2017-02-16,91936005,Alergia al polen
+508,2016-04-03,91930004,Alergia a los ácaros del polvo
+555,2023-12-04,300914000,Alergia a la aspirina
+731,2020-05-19,91933007,Alergia a los frutos secos
+814,2018-06-20,91931005,Alergia a la leche
+518,2021-08-01,91930004,Alergia a los ácaros del polvo
+452,2017-05-10,91931005,Alergia a la leche
+506,2015-03-16,91936005,Alergia al polen
+520,2020-04-25,91930004,Alergia a los ácaros del polvo
+740,2017-03-11,91934008,Alergia a la picadura de abeja
+998,2017-07-01,91934008,Alergia a la picadura de abeja
+587,2015-03-16,91936005,Alergia al polen
+400,2023-12-04,91931005,Alergia a la leche
+785,2020-04-29,91936005,Alergia al polen
+751,2023-12-04,91932006,Alergia a los mariscos
+806,2017-10-15,300914000,Alergia a la aspirina
+374,2015-03-16,91933007,Alergia a los frutos secos
+38,2019-07-30,91936005,Alergia al polen
+70,2022-09-03,91935009,Alergia al pelo de gato
+712,2017-07-03,91932006,Alergia a los mariscos
+731,2022-05-08,300914000,Alergia a la aspirina
+358,2016-01-11,91931005,Alergia a la leche
+705,2019-01-12,91930004,Alergia a los ácaros del polvo
+692,2023-04-27,91932006,Alergia a los mariscos
+465,2022-07-03,91932006,Alergia a los mariscos
+687,2019-05-03,414285001,Alergia al látex
+275,2015-03-16,91932006,Alergia a los mariscos
+427,2018-11-17,91934008,Alergia a la picadura de abeja
+682,2022-12-30,414285001,Alergia al látex
+596,2020-03-12,91934008,Alergia a la picadura de abeja
+385,2021-07-07,300914000,Alergia a la aspirina
+1000,2021-12-04,91936005,Alergia al polen
+808,2018-05-10,414285001,Alergia al látex
+541,2015-03-16,91934008,Alergia a la picadura de abeja
+335,2019-08-26,91936005,Alergia al polen
+311,2015-03-16,91931005,Alergia a la leche
+200,2022-02-14,91932006,Alergia a los mariscos
+80,2023-09-30,91931005,Alergia a la leche
+477,2017-03-18,91936005,Alergia al polen
+245,2020-03-04,300914000,Alergia a la aspirina
+363,2015-03-16,300914000,Alergia a la aspirina
+484,2022-10-04,91930004,Alergia a los ácaros del polvo
+886,2016-07-13,91932006,Alergia a los mariscos
+447,2021-08-20,91930004,Alergia a los ácaros del polvo
+571,2023-10-27,91931005,Alergia a la leche
+79,2019-05-02,91934008,Alergia a la picadura de abeja
+770,2015-03-16,414285001,Alergia al látex
+972,2021-06-15,91935009,Alergia al pelo de gato
+436,2015-03-16,91936005,Alergia al polen
+1002,2017-03-30,91931005,Alergia a la leche
+631,2017-04-05,300914000,Alergia a la aspirina
+822,2019-05-24,91936005,Alergia al polen
+798,2020-07-21,91936005,Alergia al polen
+729,2016-05-13,91930004,Alergia a los ácaros del polvo
+828,2015-10-09,91936005,Alergia al polen
+893,2018-01-20,300914000,Alergia a la aspirina
+412,2017-09-13,91934008,Alergia a la picadura de abeja
+804,2017-12-28,300914000,Alergia a la aspirina
+759,2019-01-28,91931005,Alergia a la leche
+38,2022-05-25,300914000,Alergia a la aspirina
+764,2016-08-16,91930004,Alergia a los ácaros del polvo
+449,2018-04-12,91930004,Alergia a los ácaros del polvo
+370,2023-09-05,91933007,Alergia a los frutos secos
+672,2015-03-16,91931005,Alergia a la leche
+571,2020-01-06,91930004,Alergia a los ácaros del polvo
+1021,2018-09-06,91932006,Alergia a los mariscos
+85,2016-11-09,91936005,Alergia al polen
+870,2018-01-19,300914000,Alergia a la aspirina
+859,2020-07-03,91936005,Alergia al polen
+571,2022-04-09,300913006,Alergia a la penicilina
+631,2020-02-13,414285001,Alergia al látex
+913,2016-02-01,300914000,Alergia a la aspirina
+906,2017-06-12,91934008,Alergia a la picadura de abeja
+1006,2018-05-17,91931005,Alergia a la leche
+37,2015-06-14,91933007,Alergia a los frutos secos
+341,2017-09-04,91934008,Alergia a la picadura de abeja
+453,2016-03-10,300914000,Alergia a la aspirina
+395,2023-12-03,300913006,Alergia a la penicilina
+915,2016-03-30,300914000,Alergia a la aspirina
+293,2021-09-13,300914000,Alergia a la aspirina
+777,2023-02-07,91930004,Alergia a los ácaros del polvo
+506,2020-07-16,300913006,Alergia a la penicilina
+695,2022-04-03,300913006,Alergia a la penicilina
+431,2015-03-16,91930004,Alergia a los ácaros del polvo
+484,2018-11-19,91931005,Alergia a la leche
+303,2019-05-28,300913006,Alergia a la penicilina
+74,2019-10-31,91930004,Alergia a los ácaros del polvo
+645,2015-03-16,91930004,Alergia a los ácaros del polvo
+263,2023-12-04,300914000,Alergia a la aspirina
+515,2019-08-20,91932006,Alergia a los mariscos
+721,2020-07-25,91932006,Alergia a los mariscos
+266,2016-11-07,300913006,Alergia a la penicilina
+940,2016-09-26,91934008,Alergia a la picadura de abeja
+729,2020-02-25,300914000,Alergia a la aspirina
+392,2022-12-04,91935009,Alergia al pelo de gato
+744,2016-10-27,414285001,Alergia al látex
+202,2019-09-20,91931005,Alergia a la leche
+971,2019-04-29,300913006,Alergia a la penicilina
+1002,2023-12-04,91931005,Alergia a la leche
+569,2017-11-10,91936005,Alergia al polen
+359,2020-10-31,91934008,Alergia a la picadura de abeja
+973,2020-08-21,91930004,Alergia a los ácaros del polvo
+795,2017-02-18,300913006,Alergia a la penicilina
+853,2023-06-04,91932006,Alergia a los mariscos
+178,2017-12-20,91930004,Alergia a los ácaros del polvo
+407,2016-06-22,414285001,Alergia al látex
+1032,2017-05-31,91933007,Alergia a los frutos secos
+448,2017-12-23,91933007,Alergia a los frutos secos
+615,2017-06-18,91932006,Alergia a los mariscos
+458,2015-03-16,414285001,Alergia al látex
+696,2018-10-12,91933007,Alergia a los frutos secos
+554,2022-06-10,91935009,Alergia al pelo de gato
+255,2023-12-04,91934008,Alergia a la picadura de abeja
+288,2018-05-21,91935009,Alergia al pelo de gato
+821,2022-01-24,91931005,Alergia a la leche
+637,2022-09-08,91935009,Alergia al pelo de gato
+562,2019-05-29,91932006,Alergia a los mariscos
+350,2023-12-04,414285001,Alergia al látex
+133,2020-03-03,91935009,Alergia al pelo de gato
+410,2015-06-17,91935009,Alergia al pelo de gato
+460,2023-11-24,91930004,Alergia a los ácaros del polvo
+554,2023-12-04,91930004,Alergia a los ácaros del polvo
+953,2023-02-12,300914000,Alergia a la aspirina
+336,2022-02-24,91931005,Alergia a la leche
+574,2022-02-22,300914000,Alergia a la aspirina
+885,2019-08-25,91935009,Alergia al pelo de gato
+78,2020-06-05,91933007,Alergia a los frutos secos
+870,2018-11-13,300913006,Alergia a la penicilina
+999,2020-08-08,91934008,Alergia a la picadura de abeja
+385,2015-03-16,91931005,Alergia a la leche
+253,2018-07-28,91934008,Alergia a la picadura de abeja
+556,2021-09-23,300914000,Alergia a la aspirina
+759,2017-04-10,414285001,Alergia al látex
+523,2018-03-19,91934008,Alergia a la picadura de abeja
+35,2017-12-03,91934008,Alergia a la picadura de abeja
+128,2023-12-04,300913006,Alergia a la penicilina
+429,2015-03-16,91931005,Alergia a la leche
+694,2022-08-26,91930004,Alergia a los ácaros del polvo
+739,2018-02-19,91932006,Alergia a los mariscos
+440,2021-12-16,91933007,Alergia a los frutos secos
+227,2023-12-04,91935009,Alergia al pelo de gato
+132,2016-01-26,91930004,Alergia a los ácaros del polvo
+1011,2023-12-04,91934008,Alergia a la picadura de abeja
+378,2019-11-05,300914000,Alergia a la aspirina
+934,2017-09-30,91935009,Alergia al pelo de gato
+544,2019-05-05,91936005,Alergia al polen
+807,2015-04-18,91934008,Alergia a la picadura de abeja
+723,2023-08-19,414285001,Alergia al látex
+941,2020-02-15,300913006,Alergia a la penicilina
+518,2021-10-05,91934008,Alergia a la picadura de abeja
+465,2015-07-10,300914000,Alergia a la aspirina
+534,2021-06-02,91936005,Alergia al polen
+496,2022-05-22,91934008,Alergia a la picadura de abeja
+396,2020-05-18,91934008,Alergia a la picadura de abeja
+50,2017-03-30,300913006,Alergia a la penicilina
+793,2019-07-20,300913006,Alergia a la penicilina
+738,2017-07-07,91936005,Alergia al polen
+874,2016-03-06,91932006,Alergia a los mariscos
+828,2018-01-26,91936005,Alergia al polen
+839,2019-05-20,91936005,Alergia al polen
+677,2023-01-03,414285001,Alergia al látex
+240,2023-04-14,300914000,Alergia a la aspirina
+111,2022-09-20,91935009,Alergia al pelo de gato
+864,2016-03-21,91936005,Alergia al polen
+163,2023-12-04,91931005,Alergia a la leche
+393,2022-06-15,91933007,Alergia a los frutos secos
+1002,2020-02-03,414285001,Alergia al látex
+1028,2021-08-31,300914000,Alergia a la aspirina
+395,2023-10-30,91931005,Alergia a la leche
+527,2016-06-11,414285001,Alergia al látex
+115,2023-12-04,91934008,Alergia a la picadura de abeja
+809,2020-04-18,91932006,Alergia a los mariscos
+596,2018-01-19,91932006,Alergia a los mariscos
+821,2020-10-07,91935009,Alergia al pelo de gato
+813,2017-07-30,91934008,Alergia a la picadura de abeja
+460,2019-10-23,91930004,Alergia a los ácaros del polvo
+807,2016-08-14,91932006,Alergia a los mariscos
+52,2021-11-30,91933007,Alergia a los frutos secos
+1021,2018-05-31,300914000,Alergia a la aspirina
+761,2019-10-24,91936005,Alergia al polen
+632,2017-02-27,414285001,Alergia al látex
+954,2020-02-14,414285001,Alergia al látex
+822,2018-03-29,91935009,Alergia al pelo de gato
+355,2018-11-23,91934008,Alergia a la picadura de abeja
+191,2022-08-05,91930004,Alergia a los ácaros del polvo
+536,2020-01-08,300914000,Alergia a la aspirina
+387,2023-12-04,300914000,Alergia a la aspirina
+508,2021-08-02,91936005,Alergia al polen
+382,2015-03-16,91936005,Alergia al polen
+538,2016-08-20,414285001,Alergia al látex
+336,2015-04-16,91933007,Alergia a los frutos secos
+1008,2020-12-27,91930004,Alergia a los ácaros del polvo
+703,2023-12-04,91930004,Alergia a los ácaros del polvo
+880,2015-03-16,91934008,Alergia a la picadura de abeja
+323,2023-12-04,91930004,Alergia a los ácaros del polvo
+230,2017-05-15,91934008,Alergia a la picadura de abeja
+706,2018-05-27,414285001,Alergia al látex
+870,2022-07-24,91930004,Alergia a los ácaros del polvo
+934,2019-09-12,91930004,Alergia a los ácaros del polvo
+42,2020-10-20,91936005,Alergia al polen
+321,2022-07-02,414285001,Alergia al látex
+750,2022-11-30,91932006,Alergia a los mariscos
+428,2015-09-18,300914000,Alergia a la aspirina
+412,2020-01-22,91932006,Alergia a los mariscos
+559,2015-06-28,300913006,Alergia a la penicilina
+62,2020-03-23,91932006,Alergia a los mariscos
+529,2023-10-29,91935009,Alergia al pelo de gato
+828,2016-04-10,91930004,Alergia a los ácaros del polvo
+917,2021-06-13,91935009,Alergia al pelo de gato
+465,2018-09-14,91934008,Alergia a la picadura de abeja
+685,2015-10-29,91932006,Alergia a los mariscos
+310,2022-05-18,91933007,Alergia a los frutos secos
+682,2021-03-29,91931005,Alergia a la leche
+282,2019-07-17,300914000,Alergia a la aspirina
+887,2015-12-03,91936005,Alergia al polen
+919,2019-05-24,91935009,Alergia al pelo de gato
+632,2022-05-27,91932006,Alergia a los mariscos
+147,2023-01-19,91932006,Alergia a los mariscos
+211,2020-05-27,300914000,Alergia a la aspirina
+619,2021-08-22,91935009,Alergia al pelo de gato
+819,2015-03-16,300913006,Alergia a la penicilina
+545,2018-11-10,91936005,Alergia al polen
+179,2018-09-18,91932006,Alergia a los mariscos
+603,2017-12-09,91934008,Alergia a la picadura de abeja
+930,2016-11-10,91933007,Alergia a los frutos secos
+533,2018-01-17,91932006,Alergia a los mariscos
+457,2019-12-29,300913006,Alergia a la penicilina
+828,2020-01-21,91934008,Alergia a la picadura de abeja
+1029,2021-05-07,91931005,Alergia a la leche
+180,2021-03-05,91931005,Alergia a la leche
+203,2017-03-19,414285001,Alergia al látex
+962,2015-03-16,91932006,Alergia a los mariscos
+976,2019-10-27,91931005,Alergia a la leche
+181,2021-05-02,414285001,Alergia al látex
+876,2020-12-26,91934008,Alergia a la picadura de abeja
+674,2015-03-16,300913006,Alergia a la penicilina
+766,2021-03-20,91934008,Alergia a la picadura de abeja
+194,2019-11-18,300914000,Alergia a la aspirina
+123,2022-02-15,414285001,Alergia al látex
+108,2020-12-29,91932006,Alergia a los mariscos
+631,2017-02-21,300913006,Alergia a la penicilina
+654,2020-09-03,91935009,Alergia al pelo de gato
+236,2020-05-05,91932006,Alergia a los mariscos
+399,2018-09-26,91933007,Alergia a los frutos secos
+122,2021-03-30,300913006,Alergia a la penicilina
+121,2023-11-10,91935009,Alergia al pelo de gato
+462,2016-08-20,414285001,Alergia al látex
+551,2017-11-18,91936005,Alergia al polen
+764,2020-10-11,91933007,Alergia a los frutos secos
+930,2020-09-14,91934008,Alergia a la picadura de abeja
+418,2020-06-27,91935009,Alergia al pelo de gato
+526,2016-08-02,91936005,Alergia al polen
+65,2022-07-29,300914000,Alergia a la aspirina
+212,2018-06-22,91934008,Alergia a la picadura de abeja
+395,2021-01-29,91933007,Alergia a los frutos secos
+584,2016-09-26,91936005,Alergia al polen
+369,2020-05-30,300913006,Alergia a la penicilina
+776,2022-01-19,91934008,Alergia a la picadura de abeja
+78,2019-03-22,300914000,Alergia a la aspirina
+84,2020-08-10,91930004,Alergia a los ácaros del polvo
+551,2018-08-28,91935009,Alergia al pelo de gato
+188,2015-03-16,91933007,Alergia a los frutos secos
+928,2023-12-04,91931005,Alergia a la leche
+991,2022-08-19,414285001,Alergia al látex
+434,2018-03-06,300913006,Alergia a la penicilina
+666,2015-03-16,91931005,Alergia a la leche
+935,2020-06-11,414285001,Alergia al látex
+862,2015-03-16,300914000,Alergia a la aspirina
+143,2020-03-22,91934008,Alergia a la picadura de abeja
+863,2023-12-04,91935009,Alergia al pelo de gato
+1004,2017-01-22,91934008,Alergia a la picadura de abeja
+747,2016-10-11,91931005,Alergia a la leche
+598,2023-12-04,91931005,Alergia a la leche
+982,2018-06-12,414285001,Alergia al látex
+427,2015-03-16,91933007,Alergia a los frutos secos
+961,2020-04-13,91930004,Alergia a los ácaros del polvo
+990,2019-12-01,91934008,Alergia a la picadura de abeja
+912,2020-07-17,414285001,Alergia al látex
+527,2018-09-14,91934008,Alergia a la picadura de abeja
+812,2023-12-04,91936005,Alergia al polen
+369,2020-12-15,91936005,Alergia al polen
+56,2022-08-15,91936005,Alergia al polen
+196,2022-05-19,91930004,Alergia a los ácaros del polvo
+548,2021-01-03,91936005,Alergia al polen
+764,2017-03-06,414285001,Alergia al látex
+396,2021-02-16,91930004,Alergia a los ácaros del polvo
+675,2019-10-11,300913006,Alergia a la penicilina
+602,2017-09-09,300913006,Alergia a la penicilina
+317,2021-05-31,91933007,Alergia a los frutos secos
+311,2015-03-16,414285001,Alergia al látex
+1032,2019-01-25,414285001,Alergia al látex
+334,2021-08-14,91936005,Alergia al polen
+864,2022-11-04,91936005,Alergia al polen
+610,2023-12-04,300914000,Alergia a la aspirina
+183,2019-05-10,300913006,Alergia a la penicilina
+593,2023-11-24,91930004,Alergia a los ácaros del polvo
+594,2021-11-09,91932006,Alergia a los mariscos
+1025,2015-06-16,300914000,Alergia a la aspirina
+394,2021-05-21,91935009,Alergia al pelo de gato
+457,2023-12-04,91931005,Alergia a la leche
+368,2022-08-12,91933007,Alergia a los frutos secos
+563,2020-06-03,300914000,Alergia a la aspirina
+421,2018-06-17,91932006,Alergia a los mariscos
+1006,2019-09-17,91934008,Alergia a la picadura de abeja
+559,2021-12-22,91934008,Alergia a la picadura de abeja
+915,2019-08-03,91933007,Alergia a los frutos secos
+979,2017-03-17,91936005,Alergia al polen
+707,2019-12-09,91932006,Alergia a los mariscos
+634,2023-12-04,414285001,Alergia al látex
+965,2018-04-30,91930004,Alergia a los ácaros del polvo
+108,2021-02-24,91934008,Alergia a la picadura de abeja
+86,2016-08-26,91934008,Alergia a la picadura de abeja
+67,2020-01-21,91932006,Alergia a los mariscos
+113,2019-01-18,91936005,Alergia al polen
+570,2017-11-01,91934008,Alergia a la picadura de abeja
+484,2023-12-04,91930004,Alergia a los ácaros del polvo
+883,2021-12-12,91935009,Alergia al pelo de gato
+365,2020-05-01,91933007,Alergia a los frutos secos
+948,2018-02-22,91933007,Alergia a los frutos secos
+778,2015-08-22,91933007,Alergia a los frutos secos
+579,2023-12-04,300913006,Alergia a la penicilina
+804,2022-03-06,414285001,Alergia al látex
+343,2022-01-19,300914000,Alergia a la aspirina
+574,2022-07-14,300913006,Alergia a la penicilina
+394,2019-03-07,91935009,Alergia al pelo de gato
+576,2015-03-16,91933007,Alergia a los frutos secos
+814,2022-10-10,414285001,Alergia al látex
+836,2021-11-01,91936005,Alergia al polen
+288,2015-04-03,91931005,Alergia a la leche
+224,2020-03-11,91936005,Alergia al polen
+267,2018-12-11,91935009,Alergia al pelo de gato
+738,2019-11-15,300914000,Alergia a la aspirina
+312,2018-01-26,300914000,Alergia a la aspirina
+513,2016-07-08,414285001,Alergia al látex
+587,2019-03-02,91936005,Alergia al polen
+445,2020-08-13,300913006,Alergia a la penicilina
+324,2016-01-05,91931005,Alergia a la leche
+1001,2023-12-04,300914000,Alergia a la aspirina
+824,2020-11-19,91932006,Alergia a los mariscos
+297,2020-06-04,300913006,Alergia a la penicilina
+620,2019-01-17,300913006,Alergia a la penicilina
+366,2018-09-18,300913006,Alergia a la penicilina
+564,2018-08-11,91932006,Alergia a los mariscos
+328,2018-02-20,91935009,Alergia al pelo de gato
+528,2015-10-13,91936005,Alergia al polen
+221,2021-07-14,91935009,Alergia al pelo de gato
+186,2019-05-09,91931005,Alergia a la leche
+586,2020-05-27,91934008,Alergia a la picadura de abeja
+501,2022-07-10,300913006,Alergia a la penicilina
+133,2018-07-18,300913006,Alergia a la penicilina
+362,2021-04-07,91936005,Alergia al polen
+516,2020-03-12,91934008,Alergia a la picadura de abeja
+172,2017-07-31,300914000,Alergia a la aspirina
+113,2020-11-10,91933007,Alergia a los frutos secos
+166,2019-04-18,300914000,Alergia a la aspirina
+731,2022-04-22,91930004,Alergia a los ácaros del polvo
+726,2016-12-22,91934008,Alergia a la picadura de abeja
+547,2017-12-16,91934008,Alergia a la picadura de abeja
+244,2021-04-19,91936005,Alergia al polen
+323,2021-08-11,91930004,Alergia a los ácaros del polvo
+375,2023-12-04,300914000,Alergia a la aspirina
+140,2019-12-06,414285001,Alergia al látex
+880,2015-07-07,91934008,Alergia a la picadura de abeja
+280,2020-03-06,91934008,Alergia a la picadura de abeja
+600,2022-11-11,300914000,Alergia a la aspirina
+289,2018-04-22,91930004,Alergia a los ácaros del polvo
+710,2017-01-11,414285001,Alergia al látex
+892,2019-03-24,91935009,Alergia al pelo de gato
+246,2015-04-09,91933007,Alergia a los frutos secos
+491,2015-03-16,91931005,Alergia a la leche
+604,2021-04-09,91936005,Alergia al polen
+991,2023-12-04,91935009,Alergia al pelo de gato
+461,2023-12-04,300913006,Alergia a la penicilina
+751,2017-04-27,300914000,Alergia a la aspirina
+662,2019-06-11,91936005,Alergia al polen
+44,2021-09-03,300913006,Alergia a la penicilina
+600,2015-03-16,91935009,Alergia al pelo de gato
+301,2023-12-04,91936005,Alergia al polen
+83,2021-12-05,91932006,Alergia a los mariscos
+670,2017-10-16,91935009,Alergia al pelo de gato
+470,2019-06-10,300914000,Alergia a la aspirina
+139,2022-03-16,91933007,Alergia a los frutos secos
+689,2015-03-21,91933007,Alergia a los frutos secos
+62,2015-10-18,91932006,Alergia a los mariscos
+945,2015-03-16,91935009,Alergia al pelo de gato
+34,2023-12-04,300913006,Alergia a la penicilina
+752,2023-12-04,300913006,Alergia a la penicilina
+253,2015-03-16,91930004,Alergia a los ácaros del polvo
+791,2019-08-12,300914000,Alergia a la aspirina
+678,2019-04-05,300913006,Alergia a la penicilina
+991,2017-03-13,91931005,Alergia a la leche
+852,2023-02-20,91932006,Alergia a los mariscos
+1010,2015-03-16,91933007,Alergia a los frutos secos
+802,2019-10-20,300914000,Alergia a la aspirina
+489,2020-11-25,91933007,Alergia a los frutos secos
+620,2016-09-16,91936005,Alergia al polen
+510,2023-03-22,91936005,Alergia al polen
+961,2021-06-12,300913006,Alergia a la penicilina
+37,2023-12-04,414285001,Alergia al látex
+754,2021-01-10,414285001,Alergia al látex
+769,2015-10-22,300913006,Alergia a la penicilina
+1022,2023-12-04,414285001,Alergia al látex
+97,2018-10-25,91932006,Alergia a los mariscos
+508,2015-03-16,300913006,Alergia a la penicilina
+344,2016-08-14,91932006,Alergia a los mariscos
+450,2022-08-14,300914000,Alergia a la aspirina
+961,2015-09-29,91934008,Alergia a la picadura de abeja
+317,2017-05-16,91935009,Alergia al pelo de gato
+180,2015-07-07,91934008,Alergia a la picadura de abeja
+861,2023-07-04,91933007,Alergia a los frutos secos
+764,2018-06-03,91931005,Alergia a la leche
+876,2017-02-14,300913006,Alergia a la penicilina
+877,2018-10-23,91934008,Alergia a la picadura de abeja
+419,2015-03-16,91931005,Alergia a la leche
+901,2018-11-01,91935009,Alergia al pelo de gato
+805,2019-02-17,91936005,Alergia al polen
+395,2023-12-04,91934008,Alergia a la picadura de abeja
+581,2021-04-25,91932006,Alergia a los mariscos
+187,2016-02-20,414285001,Alergia al látex
+444,2016-05-18,91931005,Alergia a la leche
+992,2021-12-16,91930004,Alergia a los ácaros del polvo
+412,2022-04-02,91932006,Alergia a los mariscos
+467,2021-11-13,91931005,Alergia a la leche
+304,2023-10-28,91933007,Alergia a los frutos secos
+518,2023-12-04,414285001,Alergia al látex
+1005,2021-02-17,91931005,Alergia a la leche
+642,2015-04-29,91936005,Alergia al polen
+147,2021-11-14,300914000,Alergia a la aspirina
+346,2015-03-16,91935009,Alergia al pelo de gato
+286,2023-12-04,91932006,Alergia a los mariscos
+767,2018-09-11,91936005,Alergia al polen
+380,2019-01-20,91931005,Alergia a la leche
+826,2021-11-25,91932006,Alergia a los mariscos
+688,2023-01-06,91933007,Alergia a los frutos secos
+864,2023-02-07,91930004,Alergia a los ácaros del polvo
+361,2019-10-03,91932006,Alergia a los mariscos
+35,2016-06-12,91932006,Alergia a los mariscos
+766,2022-08-12,91933007,Alergia a los frutos secos
+82,2021-04-13,300914000,Alergia a la aspirina
+619,2018-04-13,91936005,Alergia al polen
+266,2020-08-04,91933007,Alergia a los frutos secos
+445,2021-12-22,300913006,Alergia a la penicilina
+343,2017-03-01,91936005,Alergia al polen
+524,2021-12-01,300913006,Alergia a la penicilina
+527,2021-11-16,91932006,Alergia a los mariscos
+940,2018-06-06,91933007,Alergia a los frutos secos
+221,2023-12-04,91930004,Alergia a los ácaros del polvo
+349,2020-03-02,91931005,Alergia a la leche
+1028,2017-12-31,300914000,Alergia a la aspirina
+961,2016-12-24,91934008,Alergia a la picadura de abeja
+403,2021-03-16,91932006,Alergia a los mariscos
+825,2023-12-04,414285001,Alergia al látex
+522,2015-11-21,91934008,Alergia a la picadura de abeja
+383,2022-06-15,300913006,Alergia a la penicilina
+742,2022-11-16,300914000,Alergia a la aspirina
+70,2021-02-11,91935009,Alergia al pelo de gato
+761,2021-10-08,414285001,Alergia al látex
+740,2016-09-25,300914000,Alergia a la aspirina
+314,2019-05-16,91931005,Alergia a la leche
+911,2023-12-04,414285001,Alergia al látex
+412,2021-02-27,300913006,Alergia a la penicilina
+929,2019-02-07,300914000,Alergia a la aspirina
+319,2023-01-06,414285001,Alergia al látex
+586,2018-06-01,414285001,Alergia al látex
+922,2020-03-06,91933007,Alergia a los frutos secos
+56,2017-05-06,91932006,Alergia a los mariscos
+251,2023-12-04,91935009,Alergia al pelo de gato
+752,2019-09-05,300914000,Alergia a la aspirina
+110,2017-05-02,414285001,Alergia al látex
+971,2018-11-23,414285001,Alergia al látex
+972,2015-03-16,91933007,Alergia a los frutos secos
+797,2016-07-25,414285001,Alergia al látex
+997,2016-06-27,300914000,Alergia a la aspirina
+595,2019-01-03,91930004,Alergia a los ácaros del polvo
+125,2023-09-22,414285001,Alergia al látex
+468,2023-12-04,300913006,Alergia a la penicilina
+993,2017-11-17,91936005,Alergia al polen
+148,2017-09-30,414285001,Alergia al látex
+485,2023-12-04,300913006,Alergia a la penicilina
+1029,2018-01-18,91931005,Alergia a la leche
+658,2016-05-16,300914000,Alergia a la aspirina
+775,2016-09-10,91934008,Alergia a la picadura de abeja
+1007,2023-12-04,91934008,Alergia a la picadura de abeja
+601,2018-10-16,300913006,Alergia a la penicilina
+627,2022-05-05,91936005,Alergia al polen
+978,2015-03-16,414285001,Alergia al látex
+818,2023-01-01,91931005,Alergia a la leche
+623,2021-12-22,91934008,Alergia a la picadura de abeja
+214,2021-10-31,91931005,Alergia a la leche
+102,2019-10-06,91934008,Alergia a la picadura de abeja
+218,2019-06-22,91936005,Alergia al polen
+357,2020-02-01,91936005,Alergia al polen
+928,2019-03-13,91934008,Alergia a la picadura de abeja
+313,2020-09-15,91934008,Alergia a la picadura de abeja
+53,2020-05-12,91935009,Alergia al pelo de gato
+841,2015-03-16,91931005,Alergia a la leche
+254,2018-10-14,91930004,Alergia a los ácaros del polvo
+901,2019-11-02,91933007,Alergia a los frutos secos
+929,2016-06-21,91935009,Alergia al pelo de gato
+303,2020-04-25,91935009,Alergia al pelo de gato
+994,2021-10-13,91931005,Alergia a la leche
+630,2016-10-18,414285001,Alergia al látex
+878,2015-03-16,91932006,Alergia a los mariscos
+159,2015-08-16,300914000,Alergia a la aspirina
+805,2015-03-28,300914000,Alergia a la aspirina
+773,2016-01-11,414285001,Alergia al látex
+581,2018-01-18,91930004,Alergia a los ácaros del polvo
+849,2020-09-23,91930004,Alergia a los ácaros del polvo
+513,2019-04-26,91933007,Alergia a los frutos secos
+103,2016-09-07,91936005,Alergia al polen
+910,2022-08-25,91933007,Alergia a los frutos secos
+187,2015-03-16,91936005,Alergia al polen
+362,2017-04-04,91933007,Alergia a los frutos secos
+511,2016-01-12,300914000,Alergia a la aspirina
+1006,2018-11-14,414285001,Alergia al látex
+637,2020-12-21,300913006,Alergia a la penicilina
+958,2017-04-16,91935009,Alergia al pelo de gato
+135,2017-03-05,91930004,Alergia a los ácaros del polvo
+905,2019-02-25,91932006,Alergia a los mariscos
+946,2022-10-18,91932006,Alergia a los mariscos
+977,2023-12-04,91934008,Alergia a la picadura de abeja
+40,2022-05-16,414285001,Alergia al látex
+200,2018-07-11,91933007,Alergia a los frutos secos
+848,2023-12-04,91936005,Alergia al polen
+185,2020-07-21,91932006,Alergia a los mariscos
+770,2023-12-04,414285001,Alergia al látex
+405,2023-12-04,91931005,Alergia a la leche
+485,2016-12-16,91931005,Alergia a la leche
+772,2022-04-14,414285001,Alergia al látex
+684,2018-12-20,91933007,Alergia a los frutos secos
+758,2022-04-02,91935009,Alergia al pelo de gato
+893,2018-01-17,91936005,Alergia al polen
+648,2019-11-02,414285001,Alergia al látex
+142,2019-01-03,414285001,Alergia al látex
+232,2021-11-23,91932006,Alergia a los mariscos
+765,2023-01-22,91934008,Alergia a la picadura de abeja
+161,2021-10-11,91932006,Alergia a los mariscos
+344,2019-10-23,300913006,Alergia a la penicilina
+967,2016-11-16,91934008,Alergia a la picadura de abeja
+1027,2022-12-10,91930004,Alergia a los ácaros del polvo
+543,2023-12-04,91930004,Alergia a los ácaros del polvo
+489,2023-08-06,91934008,Alergia a la picadura de abeja
+315,2022-11-10,91932006,Alergia a los mariscos
+799,2022-11-07,91936005,Alergia al polen
+79,2017-11-23,91934008,Alergia a la picadura de abeja
+763,2019-02-06,91935009,Alergia al pelo de gato
+551,2018-06-22,414285001,Alergia al látex
+963,2015-03-16,91933007,Alergia a los frutos secos
+285,2015-04-15,91932006,Alergia a los mariscos
+382,2015-07-23,91931005,Alergia a la leche
+537,2020-12-08,300913006,Alergia a la penicilina
+114,2015-06-23,91930004,Alergia a los ácaros del polvo
+267,2022-04-06,91936005,Alergia al polen
+119,2021-09-22,91931005,Alergia a la leche
+470,2022-10-20,300914000,Alergia a la aspirina
+552,2018-05-21,91934008,Alergia a la picadura de abeja
+241,2019-09-17,91931005,Alergia a la leche
+615,2021-03-20,91931005,Alergia a la leche
+876,2018-11-21,414285001,Alergia al látex
+501,2021-09-13,91930004,Alergia a los ácaros del polvo
+974,2016-05-04,91934008,Alergia a la picadura de abeja
+455,2015-05-30,91936005,Alergia al polen
+632,2023-10-06,91931005,Alergia a la leche
+692,2022-12-22,300913006,Alergia a la penicilina
+993,2017-12-20,91932006,Alergia a los mariscos
+222,2019-07-29,91935009,Alergia al pelo de gato
+210,2016-09-05,91931005,Alergia a la leche
+587,2023-12-04,300913006,Alergia a la penicilina
+730,2023-12-04,91930004,Alergia a los ácaros del polvo
+50,2023-10-17,414285001,Alergia al látex
+871,2021-04-15,91935009,Alergia al pelo de gato
+432,2016-04-07,91936005,Alergia al polen
+943,2023-02-19,91932006,Alergia a los mariscos
+509,2019-05-12,300913006,Alergia a la penicilina
+217,2018-01-20,414285001,Alergia al látex
+458,2019-10-16,91935009,Alergia al pelo de gato
+286,2018-05-05,91931005,Alergia a la leche
+1006,2022-03-13,91934008,Alergia a la picadura de abeja
+661,2019-06-22,91931005,Alergia a la leche
+754,2019-04-30,91932006,Alergia a los mariscos
+457,2023-12-04,91935009,Alergia al pelo de gato
+333,2015-11-18,91932006,Alergia a los mariscos
+621,2017-11-07,91932006,Alergia a los mariscos
+329,2021-02-12,300913006,Alergia a la penicilina
+907,2023-12-04,91932006,Alergia a los mariscos
+113,2018-07-12,91936005,Alergia al polen
+616,2018-11-01,91936005,Alergia al polen
+571,2019-10-05,300914000,Alergia a la aspirina
+791,2019-01-20,91932006,Alergia a los mariscos
+813,2021-05-26,91930004,Alergia a los ácaros del polvo
+394,2019-06-09,91930004,Alergia a los ácaros del polvo
+613,2019-04-06,91932006,Alergia a los mariscos
+378,2022-06-28,91930004,Alergia a los ácaros del polvo
+535,2023-12-04,91931005,Alergia a la leche
+551,2019-09-20,91932006,Alergia a los mariscos
+539,2019-08-20,91930004,Alergia a los ácaros del polvo
+269,2020-10-12,300914000,Alergia a la aspirina
+360,2019-09-21,91935009,Alergia al pelo de gato
+906,2022-05-30,91935009,Alergia al pelo de gato
+99,2021-10-14,91935009,Alergia al pelo de gato
+471,2020-05-09,91935009,Alergia al pelo de gato
+483,2023-09-10,91935009,Alergia al pelo de gato
+889,2020-04-10,91933007,Alergia a los frutos secos
+630,2018-12-22,300914000,Alergia a la aspirina
+781,2017-01-19,91935009,Alergia al pelo de gato
+757,2018-01-22,91934008,Alergia a la picadura de abeja
+38,2019-08-18,91931005,Alergia a la leche
+985,2016-05-13,91934008,Alergia a la picadura de abeja
+938,2019-03-04,91933007,Alergia a los frutos secos
+288,2015-07-17,91934008,Alergia a la picadura de abeja
+427,2022-02-05,91931005,Alergia a la leche
+765,2018-07-02,91935009,Alergia al pelo de gato
+117,2020-04-04,91932006,Alergia a los mariscos
+728,2018-08-07,91934008,Alergia a la picadura de abeja
+852,2020-10-29,91936005,Alergia al polen
+211,2015-03-16,91934008,Alergia a la picadura de abeja
+885,2016-11-12,91936005,Alergia al polen
+466,2015-03-16,414285001,Alergia al látex
+81,2023-02-27,91935009,Alergia al pelo de gato
+541,2022-01-02,414285001,Alergia al látex
+249,2021-10-15,91934008,Alergia a la picadura de abeja
+282,2022-02-16,91933007,Alergia a los frutos secos
+146,2018-08-31,91930004,Alergia a los ácaros del polvo
+987,2022-01-25,91934008,Alergia a la picadura de abeja
+653,2022-02-02,91932006,Alergia a los mariscos
+210,2021-05-13,300913006,Alergia a la penicilina
+408,2018-09-13,91931005,Alergia a la leche
+41,2022-08-01,414285001,Alergia al látex
+354,2021-06-28,414285001,Alergia al látex
+65,2020-09-05,91930004,Alergia a los ácaros del polvo
+504,2018-03-26,91933007,Alergia a los frutos secos
+541,2021-07-17,91934008,Alergia a la picadura de abeja
+164,2022-05-30,91933007,Alergia a los frutos secos
+811,2015-03-16,414285001,Alergia al látex
+777,2023-12-04,91936005,Alergia al polen
+884,2020-10-07,91936005,Alergia al polen
+874,2019-10-02,91934008,Alergia a la picadura de abeja
+175,2019-01-29,91930004,Alergia a los ácaros del polvo
+393,2020-07-15,414285001,Alergia al látex
+777,2019-08-06,300913006,Alergia a la penicilina
+588,2023-01-23,300913006,Alergia a la penicilina
+549,2019-07-13,91934008,Alergia a la picadura de abeja
+475,2016-03-10,91935009,Alergia al pelo de gato
+228,2020-02-03,91930004,Alergia a los ácaros del polvo
+350,2016-11-12,91935009,Alergia al pelo de gato
+863,2017-01-27,414285001,Alergia al látex
+98,2023-12-04,91930004,Alergia a los ácaros del polvo
+86,2015-03-16,91930004,Alergia a los ácaros del polvo
+139,2020-11-09,91934008,Alergia a la picadura de abeja
+61,2020-08-29,91933007,Alergia a los frutos secos
+122,2020-05-31,91930004,Alergia a los ácaros del polvo
+882,2021-07-17,91930004,Alergia a los ácaros del polvo
+301,2015-03-16,91931005,Alergia a la leche
+390,2019-11-10,91935009,Alergia al pelo de gato
+609,2018-09-09,91936005,Alergia al polen
+663,2020-03-25,300913006,Alergia a la penicilina
+126,2022-08-23,300914000,Alergia a la aspirina
+915,2017-10-12,91933007,Alergia a los frutos secos
+238,2018-06-02,91932006,Alergia a los mariscos
+659,2018-11-21,300913006,Alergia a la penicilina
+718,2022-12-05,300914000,Alergia a la aspirina
+865,2023-05-18,91932006,Alergia a los mariscos
+224,2015-11-13,91933007,Alergia a los frutos secos
+997,2016-09-29,300914000,Alergia a la aspirina
+127,2022-02-13,414285001,Alergia al látex
+435,2020-05-23,91936005,Alergia al polen
+987,2017-01-27,91932006,Alergia a los mariscos
+369,2022-02-07,91934008,Alergia a la picadura de abeja
+436,2022-05-26,91936005,Alergia al polen
+646,2023-12-04,91932006,Alergia a los mariscos
+379,2020-04-08,91936005,Alergia al polen
+423,2019-11-03,91931005,Alergia a la leche
+971,2015-03-16,91931005,Alergia a la leche
+697,2015-03-16,91936005,Alergia al polen
+97,2022-12-12,91930004,Alergia a los ácaros del polvo
+359,2020-07-05,91934008,Alergia a la picadura de abeja
+737,2021-06-22,300913006,Alergia a la penicilina
+999,2021-04-08,414285001,Alergia al látex
+888,2023-12-04,91932006,Alergia a los mariscos
+223,2023-03-17,91936005,Alergia al polen
+624,2019-07-15,300913006,Alergia a la penicilina
+461,2016-08-19,414285001,Alergia al látex
+546,2019-06-24,300914000,Alergia a la aspirina
+414,2019-06-11,300913006,Alergia a la penicilina
+913,2015-10-31,91934008,Alergia a la picadura de abeja
+81,2021-05-18,91935009,Alergia al pelo de gato
+844,2022-12-12,91933007,Alergia a los frutos secos
+315,2017-03-20,300914000,Alergia a la aspirina
+396,2021-05-25,91936005,Alergia al polen
+133,2019-08-05,414285001,Alergia al látex
+610,2022-08-02,414285001,Alergia al látex
+48,2023-12-04,91933007,Alergia a los frutos secos
+222,2019-10-25,300913006,Alergia a la penicilina
+241,2019-04-02,91932006,Alergia a los mariscos
+887,2022-06-29,91931005,Alergia a la leche
+829,2023-02-10,414285001,Alergia al látex
+819,2015-06-12,91931005,Alergia a la leche
+393,2023-12-04,91931005,Alergia a la leche
+395,2023-03-25,91936005,Alergia al polen
+907,2015-03-16,91936005,Alergia al polen
+880,2017-04-24,91936005,Alergia al polen
+468,2019-03-22,91930004,Alergia a los ácaros del polvo
+285,2022-10-12,300914000,Alergia a la aspirina
+120,2015-10-12,91936005,Alergia al polen
+347,2021-02-03,300914000,Alergia a la aspirina
+923,2018-10-11,91935009,Alergia al pelo de gato
+956,2015-05-15,414285001,Alergia al látex
+504,2022-01-25,300914000,Alergia a la aspirina
+35,2021-10-30,91931005,Alergia a la leche
+65,2015-03-16,91934008,Alergia a la picadura de abeja
+494,2021-08-24,91932006,Alergia a los mariscos
+321,2023-12-04,91935009,Alergia al pelo de gato
+167,2019-02-19,91930004,Alergia a los ácaros del polvo
+590,2018-08-15,91936005,Alergia al polen
+357,2023-12-04,91936005,Alergia al polen
+893,2016-11-10,91935009,Alergia al pelo de gato
+62,2018-09-14,91930004,Alergia a los ácaros del polvo
+161,2018-08-07,300913006,Alergia a la penicilina
+50,2021-04-14,91935009,Alergia al pelo de gato
+864,2015-03-16,91933007,Alergia a los frutos secos
+357,2017-12-08,91936005,Alergia al polen
+317,2023-12-04,300914000,Alergia a la aspirina
+187,2017-05-14,300913006,Alergia a la penicilina
+186,2020-05-15,300913006,Alergia a la penicilina
+566,2023-12-04,91931005,Alergia a la leche
+575,2019-08-02,91930004,Alergia a los ácaros del polvo
+898,2022-09-10,91935009,Alergia al pelo de gato
+513,2022-07-29,91934008,Alergia a la picadura de abeja
+856,2022-08-23,91930004,Alergia a los ácaros del polvo
+647,2018-08-28,91930004,Alergia a los ácaros del polvo
+93,2019-08-20,300913006,Alergia a la penicilina
+977,2023-08-26,91933007,Alergia a los frutos secos
+473,2023-12-04,300914000,Alergia a la aspirina
+123,2022-09-27,91932006,Alergia a los mariscos
+577,2017-11-08,91935009,Alergia al pelo de gato
+646,2023-12-04,91930004,Alergia a los ácaros del polvo
+580,2015-12-25,91931005,Alergia a la leche
+697,2019-03-03,91936005,Alergia al polen
+342,2017-08-16,414285001,Alergia al látex
+605,2023-04-16,300914000,Alergia a la aspirina
+125,2021-09-21,414285001,Alergia al látex
+62,2021-09-21,91932006,Alergia a los mariscos
+502,2015-03-16,91932006,Alergia a los mariscos
+352,2017-11-08,91936005,Alergia al polen
+975,2023-10-31,91934008,Alergia a la picadura de abeja
+276,2019-01-14,91935009,Alergia al pelo de gato
+78,2020-10-24,91934008,Alergia a la picadura de abeja
+554,2020-03-05,91932006,Alergia a los mariscos
+892,2018-07-06,300914000,Alergia a la aspirina
+323,2019-03-10,91934008,Alergia a la picadura de abeja
+82,2021-01-12,91934008,Alergia a la picadura de abeja
+804,2018-07-10,91930004,Alergia a los ácaros del polvo
+463,2019-10-13,300913006,Alergia a la penicilina
+55,2023-08-06,91936005,Alergia al polen
+323,2023-10-22,91931005,Alergia a la leche
+594,2020-04-27,91932006,Alergia a los mariscos

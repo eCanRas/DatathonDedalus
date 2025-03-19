@@ -1,0 +1,18 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "PacienteID": {
+            "sdtype": "numerical"
+        },
+        "Fecha_diagnostico": {
+            "sdtype": "datetime",
+            "datetime_format": "%Y-%m-%d"
+        },
+        "Codigo_SNOMED": {
+            "sdtype": "categorical"
+        },
+        "Descripcion": {
+            "sdtype": "categorical"
+        }
+    }
+}

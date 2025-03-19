@@ -1,0 +1,32 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "PacienteID": {
+            "sdtype": "numerical"
+        },
+        "Fecha de inicio": {
+            "sdtype": "datetime",
+            "datetime_format": "%Y-%m-%d"
+        },
+        "Fecha de fin": {
+            "sdtype": "datetime",
+            "datetime_format": "%Y-%m-%d"
+        },
+        "Codigo": {
+            "sdtype": "categorical"
+        },
+        "Nombre": {
+            "sdtype": "categorical"
+        },
+        "Dosis": {
+            "sdtype": "text",
+            "pii": false
+        },
+        "Frecuencia": {
+            "sdtype": "categorical"
+        },
+        "V\u00eda de administraci\u00f3n": {
+            "sdtype": "categorical"
+        }
+    }
+}
