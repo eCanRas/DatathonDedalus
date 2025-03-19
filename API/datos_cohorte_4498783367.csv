@@ -1,8 +1,0 @@
-PacienteID,Fecha_diagnostico,Codigo_SNOMED,Descripcion,Fecha.de.inicio,Fecha.de.fin,Código,Nombre,Dosis,Frecuencia,Vía.de.administración,Codigo
-6,2020-05-02,300913006,Alergia a la penicilina,2015-04-10,,B01AC06,Ácido acetilsalicílico,100 mg,1 vez al día,oral,
-6,2020-05-02,300913006,Alergia a la penicilina,2015-04-15,,C09AA02,Enalapril,5 mg,2 veces al día,oral,
-6,2020-05-02,300913006,Alergia a la penicilina,2015-04-20,,C07AB02,Metoprolol,50 mg,2 veces al día,oral,
-6,2020-05-02,300913006,Alergia a la penicilina,2015-04-15,,C03CA01,Furosemida,40 mg,1 vez al día,oral,
-6,2020-05-02,300913006,Alergia a la penicilina,2015-06-01,,C03DA01,Espironolactona,25 mg,1 vez al día,oral,
-6,2020-05-02,300913006,Alergia a la penicilina,2015-04-15,,C10AA07,Rosuvastatina,20 mg,1 vez al día,oral,
-1025,2015-06-16,300914000,Alergia a la aspirina,,,,,,,,
