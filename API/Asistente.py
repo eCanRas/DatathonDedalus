@@ -93,13 +93,13 @@ class Asistente:
             )
 
             # Optiene el nombre de la imagen si se ha generado
-            match = re.search(r"\"([^']+\.png)\"", response["output"])
-            if match:
+            match = re.search(r"([^']+\.png)", response["output"])
+            if match and os.path.exists(f".\/{match.group(1)}"):
                 url_grafica = match.group(1)
 
             # Optiene el nombre de la imagen si se ha generado
-            match = re.search(r"\"([^']+\.csv)\"", response["output"])
-            if match:
+            match = re.search(r"([^']+\.csv)", response["output"])
+            if match and os.path.exists(f".\/{match.group(1)}"):
                 url_csv = match.group(1)
 
             resultado = response["output"]
